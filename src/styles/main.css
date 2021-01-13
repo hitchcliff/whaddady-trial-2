@@ -536,6 +536,22 @@ video {
   height: auto;
 }
 
+@font-face {
+  font-family: 'Drukwide Bold';
+
+  src: url('../assets/fonts/drukwide/bold.woff') format('woff');
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Icomoon';
+
+  src: url('../assets/fonts/iconmoon/icomoon.woff') format('woff');
+
+  font-display: swap;
+}
+
 .container {
   width: 100%;
 }
@@ -11205,6 +11221,14 @@ video {
 
 .font-mono {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.font-drukwide-bold {
+  font-family: Drukwide Bold, sans-serif;
+}
+
+.font-icomoon-regular {
+  font-family: Icomoon, sans-serif;
 }
 
 .font-thin {
@@ -22173,6 +22197,10 @@ video {
   stroke: currentColor;
 }
 
+.stroke-white {
+  stroke: #ffffff;
+}
+
 .stroke-0 {
   stroke-width: 0;
 }
@@ -29126,6 +29154,16 @@ video {
 
 .animate-bounce {
   animation: bounce 1s infinite;
+}
+
+.link {
+  font-family: Drukwide Bold, sans-serif;
+  --tw-text-opacity: 1;
+  color: rgba(220, 38, 38, var(--tw-text-opacity));
+  --tw-text-opacity: 0.6;
+  -webkit-text-stroke: 2px white;
+  text-shadow: 0px 0px 20px rgba(255, 0, 0, 0.6);
+  /* filter: sepia(100%) hue-rotate(90deg) saturate(400%); */
 }
 
 @media (min-width: 640px) {
@@ -39798,6 +39836,14 @@ video {
 
   .sm\:font-mono {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+
+  .sm\:font-drukwide-bold {
+    font-family: Drukwide Bold, sans-serif;
+  }
+
+  .sm\:font-icomoon-regular {
+    font-family: Icomoon, sans-serif;
   }
 
   .sm\:font-thin {
@@ -50751,6 +50797,10 @@ video {
 
   .sm\:stroke-current {
     stroke: currentColor;
+  }
+
+  .sm\:stroke-white {
+    stroke: #ffffff;
   }
 
   .sm\:stroke-0 {
@@ -68350,6 +68400,14 @@ video {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
+  .md\:font-drukwide-bold {
+    font-family: Drukwide Bold, sans-serif;
+  }
+
+  .md\:font-icomoon-regular {
+    font-family: Icomoon, sans-serif;
+  }
+
   .md\:font-thin {
     font-weight: 100;
   }
@@ -79301,6 +79359,10 @@ video {
 
   .md\:stroke-current {
     stroke: currentColor;
+  }
+
+  .md\:stroke-white {
+    stroke: #ffffff;
   }
 
   .md\:stroke-0 {
@@ -96900,6 +96962,14 @@ video {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
+  .lg\:font-drukwide-bold {
+    font-family: Drukwide Bold, sans-serif;
+  }
+
+  .lg\:font-icomoon-regular {
+    font-family: Icomoon, sans-serif;
+  }
+
   .lg\:font-thin {
     font-weight: 100;
   }
@@ -107851,6 +107921,10 @@ video {
 
   .lg\:stroke-current {
     stroke: currentColor;
+  }
+
+  .lg\:stroke-white {
+    stroke: #ffffff;
   }
 
   .lg\:stroke-0 {
@@ -125450,6 +125524,14 @@ video {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
+  .xl\:font-drukwide-bold {
+    font-family: Drukwide Bold, sans-serif;
+  }
+
+  .xl\:font-icomoon-regular {
+    font-family: Icomoon, sans-serif;
+  }
+
   .xl\:font-thin {
     font-weight: 100;
   }
@@ -136401,6 +136483,10 @@ video {
 
   .xl\:stroke-current {
     stroke: currentColor;
+  }
+
+  .xl\:stroke-white {
+    stroke: #ffffff;
   }
 
   .xl\:stroke-0 {
@@ -154000,6 +154086,14 @@ video {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
+  .\32xl\:font-drukwide-bold {
+    font-family: Drukwide Bold, sans-serif;
+  }
+
+  .\32xl\:font-icomoon-regular {
+    font-family: Icomoon, sans-serif;
+  }
+
   .\32xl\:font-thin {
     font-weight: 100;
   }
@@ -164951,6 +165045,10 @@ video {
 
   .\32xl\:stroke-current {
     stroke: currentColor;
+  }
+
+  .\32xl\:stroke-white {
+    stroke: #ffffff;
   }
 
   .\32xl\:stroke-0 {

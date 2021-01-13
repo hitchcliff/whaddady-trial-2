@@ -5,7 +5,7 @@ import './styles/main.css';
 
 function App() {
   return (
-    <div className="w-full h-full">
+    <div className="w-full h-full font-icomoon-regular">
       <Suspense fallback={null}>
         <Router>
           <Switch>

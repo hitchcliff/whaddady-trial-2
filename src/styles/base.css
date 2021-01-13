@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'Drukwide Bold';
+  src: url('../assets/fonts/drukwide/bold.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Icomoon';
+  src: url('../assets/fonts/iconmoon/icomoon.woff') format('woff');
+  font-display: swap;
+}
