@@ -1,4 +1,5 @@
 import React from 'react';
+import Quotes from '../../components/Heading/Quotes';
 
 interface ItemProps {
   className?: string;
@@ -12,7 +13,7 @@ export default function Item({ className, img, title, children }: ItemProps) {
     <div className={className} style={{ width: '70vw' }}>
       <div className="flex flex-row items-center">
         <div className="relative mr-10">
-          <div className="absolute right-0 bg-transparent p-2">""</div>
+          <Quotes />
           <img src={img} alt="man with chain" />
         </div>
         <div>
