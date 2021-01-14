@@ -4,6 +4,8 @@ import { RoutePattern } from '../../routes/RoutePattern';
 import BGImage from '../../assets/images/bg-piano.jpg';
 import PageNavigation from '../PageNavigation/PageNavigation';
 import Item from './Item';
+import { motion } from 'framer-motion';
+import { SlideRight } from '../../components/FramerMotion/FramerMotions';
 
 export default function Rules() {
   return (
@@ -13,7 +15,9 @@ export default function Rules() {
       </div>
       <div className="w-full z-10">
         <div className="my-auto px-10 lg:px-40">
-          <h2 className="text-primary uppercase font-drukwide-bold text-4xl">the spartan way</h2>
+          <motion.h2 className="text-primary uppercase font-drukwide-bold text-4xl" {...SlideRight}>
+            the spartan way
+          </motion.h2>
         </div>
       </div>
       <div className="w-full mt-12 flex flex-col">

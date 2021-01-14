@@ -37,6 +37,37 @@ export const SlideLeftThenSlideRight: MotionProps = {
   transition,
 };
 
+export const SlideRight: MotionProps = {
+  initial: {
+    x: -400,
+    opacity: 0,
+  },
+  animate: {
+    opacity: 1,
+    x: 0,
+  },
+  exit: {
+    x: 100,
+    opacity: 0,
+  },
+  transition,
+};
+
+export const SlideUp: MotionProps = {
+  initial: {
+    y: 200,
+    opacity: 0,
+  },
+  animate: {
+    y: 0,
+    opacity: 1,
+  },
+  exit: {
+    y: -30,
+    opacity: 0,
+  },
+};
+
 export const ScaleInThenScaleOut: MotionProps = {
   initial: {
     y: -40,
