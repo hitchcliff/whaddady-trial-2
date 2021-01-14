@@ -7,6 +7,9 @@ module.exports = {
         'drukwide-bold': ['Drukwide Bold', 'sans-serif'],
         'icomoon-regular': ['Icomoon', 'sans-serif'],
       },
+      colors: {
+        primary: '#d62a33',
+      },
       stroke: {
         white: '#ffffff',
       },
