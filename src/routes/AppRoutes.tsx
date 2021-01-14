@@ -2,7 +2,7 @@ import React from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { Route, Switch, useLocation } from 'react-router-dom';
 import { RoutePattern } from './RoutePattern';
-import { FutureTools, Home, HowItWorks, Rules, Testimonials } from '../app/index';
+import { FutureTools, Home, HowItWorks, Rules, Testimonials, SumbmitYourMusic } from '../app/index';
 
 export default function AppRoutes() {
   const location = useLocation();
@@ -15,6 +15,7 @@ export default function AppRoutes() {
         <Route exact path={RoutePattern.FutureTools} component={FutureTools} />
         <Route exact path={RoutePattern.HowItWorks} component={HowItWorks} />
         <Route exact path={RoutePattern.Testimonials} component={Testimonials} />
+        <Route exact path={RoutePattern.SumbmitYourMusic} component={SumbmitYourMusic} />
         <Route path="*">Page not found</Route>
       </Switch>
     </AnimatePresence>

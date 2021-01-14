@@ -8,7 +8,7 @@ import ShowcaseImage from '../../assets/images/testimonial.jpg';
 
 export default function Testimonials() {
   return (
-    <div className="relative w-screen h-screen flex flex-col items-center justify-center overflow-hidden">
+    <div className="relative w-screen min-h-screen flex flex-col items-center justify-center overflow-hidden">
       <div className="absolute top-0 left-0 w-full h-full z-0">
         <img className="object-cover w-full" src={BGImage} alt="background piano studio" />
       </div>

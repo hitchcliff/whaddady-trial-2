@@ -7,7 +7,7 @@ import PageNavigation from '../PageNavigation/PageNavigation';
 
 export default function FutureTools() {
   return (
-    <div className="bg-black w-full h-screen flex flex-col justify-center items-center">
+    <div className="bg-black w-full min-h-screen flex flex-col justify-center items-center">
       <div className="w-full flex flex-col">
         <HorizontalScroll
           pageLock={true}
