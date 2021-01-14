@@ -29334,6 +29334,28 @@ video {
   animation: bounce 1s infinite;
 }
 
+.point-right {
+  animation: bounceRight 2s infinite;
+}
+
+@keyframes bounceRight {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateX(0);
+  }
+
+  40% {
+    transform: translateX(-30px);
+  }
+
+  60% {
+    transform: translateX(-15px);
+  }
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;

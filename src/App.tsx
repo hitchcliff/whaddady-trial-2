@@ -2,6 +2,7 @@ import React, { Suspense } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import AppRoutes from './routes/AppRoutes';
 import './styles/main.css';
+import './App.css';
 
 function App() {
   return (

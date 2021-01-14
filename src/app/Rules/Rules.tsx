@@ -9,10 +9,10 @@ export default function Rules() {
   return (
     <div className="relative w-screen min-h-screen flex flex-col items-center justify-center overflow-hidden">
       <div className="absolute top-0 left-0 w-full h-full z-0">
-        <img className="object-cover w-full" src={BGImage} alt="background piano studio" />
+        <img className="object-cover w-full h-full" src={BGImage} alt="background piano studio" />
       </div>
       <div className="w-full z-10">
-        <div className="my-auto px-40">
+        <div className="my-auto px-10 lg:px-40">
           <h2 className="text-primary uppercase font-drukwide-bold text-4xl">the spartan way</h2>
         </div>
       </div>
@@ -22,7 +22,7 @@ export default function Rules() {
           reverseScroll={true}
           config={{ stiffness: 30, damping: 10 }}
         >
-          <Item str="1" className="pl-56">
+          <Item str="1" className="pl-20 lg:hpl-56">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto accusantium,
             perspiciatis similique quas delectus necessitatibus deleniti corporis exercitationem aut
             consequuntur non illum libero fugiat facere nobis molestias quisquam, eos error.
