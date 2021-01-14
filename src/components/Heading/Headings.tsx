@@ -38,7 +38,7 @@ export default function Headings({ text, text2, after, after2, v }: HeadingsProp
           >
             {after} <br />
             {after2}
-            <h2 className="font-drukwide-bold uppercase text-4xl text-primary z-10 whitespace-nowrap transition-all -mt-8  hover:text-primary">
+            <h2 className="font-drukwide-bold uppercase text-4xl text-primary z-10 whitespace-nowrap transition-all -mt-4  hover:text-primary">
               {text} <br />
               {text2}
             </h2>

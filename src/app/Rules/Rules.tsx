@@ -61,7 +61,7 @@ export default function Rules() {
           x
         </Link>
       </div>
-      <div className="ml-auto mt-12">
+      <div className="ml-auto mr-12 mt-12">
         <Next text="future tools" after="next" to={RoutePattern.FutureTools} />
       </div>
     </div>

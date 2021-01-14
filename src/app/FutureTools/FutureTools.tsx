@@ -17,27 +17,25 @@ export default function FutureTools() {
           reverseScroll={true}
           config={{ stiffness: 30, damping: 10 }}
         >
-          <div className="py-10 z-10 flex flex-col justify-center items-center">
-            <Headings text="future" text2="tools" after="future" after2="tools" v={Version.v1} />
-          </div>
-          <div className="flex flex-row w-screen">
+          <div className="flex flex-row items-center mr-16" style={{ width: '80vw' }}>
             <div className="flex flex-col">
-              <div className="py-20">
+              <div className="py-10">
                 <Headings text="in one app" after="a&nbsp;record" after2="company" v={Version.v2} />
-                <p className="text-white mt-8 px-40">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ullam labore
-                  aliquid aut, corporis maxime vel fugiat animi impedit officia?
+                <p className="text-white mt-8 px-20">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi, quod. Expedita ad
+                  aperiam recusandae ipsa, dolore eaque necessitatibus consequatur autem ducimus?
+                  Quo aut iste facilis!
                 </p>
               </div>
             </div>
             <div>
-              <img className="w-3/4" src={Headseat} alt="headset record" />
+              <img className="w-full" src={Headseat} alt="headset record" />
             </div>
           </div>
-          <div className="py-20">
+          <div className="py-20 m-auto w-auto">
             <Headings after="music" text="distribution" v={Version.v2} />
             <p className="text-white mt-8">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus, exercitationem.
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, quasi.?
             </p>
           </div>
         </HorizontalScroll>
@@ -53,7 +51,7 @@ export default function FutureTools() {
           x
         </Link>
       </div>
-      <div className="ml-auto mt-12">
+      <div className="ml-auto mr-12 mt-12">
         <Next text="testimonials" after="next" to={RoutePattern.Testimonials} />
       </div>
     </div>
