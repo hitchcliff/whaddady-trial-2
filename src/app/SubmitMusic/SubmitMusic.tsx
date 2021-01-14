@@ -1,3 +1,5 @@
+import { motion } from 'framer-motion';
+import { SlideUp } from '../../components/FramerMotion/FramerMotions';
 import { Headings } from '../../components/Heading';
 import { Version } from '../../components/Heading/Headings';
 import { RoutePattern } from '../../routes/RoutePattern';
@@ -9,7 +11,7 @@ export default function SubmitMusic() {
       <div>
         <Headings text="submit your music" after="submit your music" v={Version.v2} />
       </div>
-      <form className="flex flex-col mt-10">
+      <motion.form className="flex flex-col mt-10" {...SlideUp} transition={{ duration: 1.2 }}>
         <div className="flex flex-row justify-center items-center">
           <div className="flex flex-col mr-5">
             <label className="text-white uppercase" htmlFor="first">
@@ -43,7 +45,7 @@ export default function SubmitMusic() {
             submit
           </button>
         </div>
-      </form>
+      </motion.form>
       <PageNavigation className="pr-36" to={RoutePattern.Home} text="home" text2="go back" />
     </div>
   );

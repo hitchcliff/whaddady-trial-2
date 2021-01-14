@@ -55,7 +55,7 @@ export const SlideRight: MotionProps = {
 
 export const SlideUp: MotionProps = {
   initial: {
-    y: 200,
+    y: 80,
     opacity: 0,
   },
   animate: {

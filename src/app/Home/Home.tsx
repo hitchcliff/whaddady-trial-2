@@ -37,9 +37,10 @@ export default function Home() {
 
       {/* desktop */}
       <div
-        className="absolute z-10 transform top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 hidden lg:block"
+        className="absolute z-10 transform top-1/2 left-1/2 hidden lg:block"
         style={{
           width: '72.333%',
+          transform: 'translate(-50%, -100%)',
         }}
       >
         <Navigation />
