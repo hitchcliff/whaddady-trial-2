@@ -16,7 +16,7 @@ export default function Rules() {
           <h2 className="text-primary uppercase font-drukwide-bold text-4xl">the spartan way</h2>
         </div>
       </div>
-      <div className="w-full mt-5 flex flex-col">
+      <div className="w-full mt-12 flex flex-col">
         <HorizontalScroll
           pageLock={true}
           reverseScroll={true}

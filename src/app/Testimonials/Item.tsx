@@ -1,18 +1,24 @@
 import React from 'react';
-import TestimonialImage from '../../assets/images/testimonial.jpg';
 
-export default function Item() {
+interface ItemProps {
+  className?: string;
+  img: string;
+  title: string;
+  children: string;
+}
+
+export default function Item({ className, img, title, children }: ItemProps) {
   return (
-    <div>
+    <div className={className} style={{ width: '70vw' }}>
       <div className="flex flex-row items-center">
         <div className="relative mr-10">
           <div className="absolute right-0 bg-transparent p-2">""</div>
-          <img src={TestimonialImage} alt="man with chain" />
+          <img src={img} alt="man with chain" />
         </div>
-        <p className="text-white">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus eaque aliquam
-          distinctio! Velit, esse enim.
-        </p>
+        <div>
+          <h2 className="text-white text-2xl">{title}</h2>
+          <p className="text-white mt-5">{children}</p>
+        </div>
       </div>
     </div>
   );
