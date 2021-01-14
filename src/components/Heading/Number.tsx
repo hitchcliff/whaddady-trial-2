@@ -1,3 +1,5 @@
+import React from 'react';
+
 interface NumberProps {
   number: string;
   children: any;
