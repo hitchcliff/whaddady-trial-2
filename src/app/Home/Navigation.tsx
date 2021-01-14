@@ -4,7 +4,7 @@ import { RoutePattern } from '../../routes/RoutePattern';
 
 export default function Navigation() {
   return (
-    <div className="m-auto z-10" style={{ width: '72.333%' }}>
+    <div>
       <ul className="flex flex-row uppercase whitespace-nowrap text-white gap-32 text-7xl">
         <HorizontalScroll
           pageLock={true}
