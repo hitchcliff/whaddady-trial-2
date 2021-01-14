@@ -39,8 +39,8 @@ export default function Home() {
       </motion.div>
       <motion.div
         className="absolute z-10 transform -translate-x-1/2"
-        style={{ bottom: '212px', left: '48.9%' }}
-        {...SlideLeftThenSlideRight}
+        style={{ bottom: '212px', left: '49.6%' }}
+        {...FadeInThenFadeOut}
       >
         <Logo spinning />
       </motion.div>
