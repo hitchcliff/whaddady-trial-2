@@ -591,9 +591,10 @@ video {
   font-family: Drukwide Bold, sans-serif;
   --tw-text-opacity: 1;
   color: rgba(214, 42, 51, var(--tw-text-opacity));
-  --tw-text-opacity: 1;
+  --tw-text-opacity: 0.2;
   -webkit-text-stroke: 2px white;
-  text-shadow: 0px 0px 15px rgba(255, 0, 0, 1);
+  text-shadow: 0px 0px 15px rgba(255, 0, 0, 0.6);
+  filter: sepia(0%) hue-rotate(0deg) saturate(400%);
 }
 
 .link:hover {
