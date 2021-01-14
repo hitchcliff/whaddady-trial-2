@@ -11,7 +11,7 @@ interface ItemProps {
 export default function Item({ className, img, title, children }: ItemProps) {
   return (
     <div className={className} style={{ width: '70vw' }}>
-      <div className="flex flex-row items-center">
+      <div className="flex flex-col lg:flex-row items-center">
         <div className="relative mr-10">
           <Quotes />
           <img src={img} alt="man with chain" />
