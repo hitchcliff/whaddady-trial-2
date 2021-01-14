@@ -5,6 +5,8 @@ import BGImage from '../../assets/images/bg-piano.jpg';
 import Item from './Item';
 import PageNavigation from '../PageNavigation/PageNavigation';
 import ShowcaseImage from '../../assets/images/testimonial.jpg';
+import { SlideLeftThenSlideRight } from '../../components/FramerMotion/FramerMotions';
+import { motion } from 'framer-motion';
 
 export default function Testimonials() {
   return (
@@ -14,7 +16,12 @@ export default function Testimonials() {
       </div>
       <div className="w-full py-20 lg:py-0 z-10">
         <div className="my-auto px-10 lg:px-40">
-          <h2 className="text-primary uppercase font-drukwide-bold text-4xl">testimonials</h2>
+          <motion.h2
+            className="text-primary uppercase font-drukwide-bold text-4xl"
+            {...SlideLeftThenSlideRight}
+          >
+            testimonials
+          </motion.h2>
         </div>
       </div>
       <div className="w-full flex flex-col mt-0 lg:mt-12">

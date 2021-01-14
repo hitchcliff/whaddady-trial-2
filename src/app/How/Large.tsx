@@ -2,6 +2,8 @@ import { Headings } from '../../components/Heading';
 import { Version } from '../../components/Heading/Headings';
 import Headset from '../../assets/images/headset.png';
 import HorizontalScroll from 'react-scroll-horizontal';
+import { motion } from 'framer-motion';
+import { SlideRight, SlideUp } from '../../components/FramerMotion/FramerMotions';
 
 export default function Large() {
   return (
@@ -15,13 +17,18 @@ export default function Large() {
               after="apply&nbsp;for&nbsp;a"
               v={Version.v2}
             />
-            <p className="text-white mt-8 px-20">
+            <motion.p className="text-white mt-8 px-20" {...SlideRight}>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, cupiditate.
-            </p>
+            </motion.p>
           </div>
         </div>
         <div className="m-auto">
-          <img src={Headset} alt="headset record" style={{ minWidth: '500px' }} />
+          <motion.img
+            src={Headset}
+            alt="headset record"
+            style={{ minWidth: '500px' }}
+            {...SlideUp}
+          />
         </div>
       </div>
       <div className="py-20 m-auto w-auto">
@@ -32,10 +39,10 @@ export default function Large() {
           text2="stem rep."
           v={Version.v2}
         />
-        <p className="text-white mt-8 ">
+        <motion.p className="text-white mt-8 " {...SlideRight}>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptates autem sint
           eos quaerat repudiandae fuga ut vitae animi possimus.
-        </p>
+        </motion.p>
       </div>
     </HorizontalScroll>
   );

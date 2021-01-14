@@ -1,11 +1,18 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { Route, Switch, useLocation } from 'react-router-dom';
 import { RoutePattern } from './RoutePattern';
 import { FutureTools, Home, HowItWorks, Rules, Testimonials, SumbmitYourMusic } from '../app/index';
 
+import gsap from 'gsap';
+import { CSSPlugin } from 'gsap/CSSPlugin';
+
 export default function AppRoutes() {
   const location = useLocation();
+
+  useEffect(() => {
+    gsap.registerPlugin(CSSPlugin);
+  }, []);
 
   return (
     <AnimatePresence exitBeforeEnter>

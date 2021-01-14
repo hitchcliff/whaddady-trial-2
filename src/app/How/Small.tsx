@@ -1,6 +1,8 @@
 import { Headings } from '../../components/Heading';
 import Headset from '../../assets/images/headset.png';
 import { Version } from '../../components/Heading/Headings';
+import { motion } from 'framer-motion';
+import { SlideRight, SlideUp } from '../../components/FramerMotion/FramerMotions';
 
 export default function Small() {
   return (
@@ -14,13 +16,13 @@ export default function Small() {
               after="apply&nbsp;for&nbsp;a"
               v={Version.v2}
             />
-            <p className="text-white mt-8">
+            <motion.p className="text-white mt-8" {...SlideRight}>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, cupiditate.
-            </p>
+            </motion.p>
           </div>
         </div>
         <div className="m-auto">
-          <img className="w-full" src={Headset} alt="headset record" />
+          <motion.img className="w-full" src={Headset} alt="headset record" {...SlideUp} />
         </div>
       </div>
       <div className="py-10 m-auto w-auto">
@@ -31,10 +33,10 @@ export default function Small() {
           text2="stem rep."
           v={Version.v2}
         />
-        <p className="text-white mt-8">
+        <motion.p className="text-white mt-8" {...SlideRight}>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptates autem sint
           eos quaerat repudiandae fuga ut vitae animi possimus.
-        </p>
+        </motion.p>
       </div>
     </div>
   );

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import HorizontalScroll from 'react-scroll-horizontal';
 import { RoutePattern } from '../../routes/RoutePattern';
 import BGImage from '../../assets/images/bg-piano.jpg';
@@ -9,7 +9,10 @@ import { SlideRight } from '../../components/FramerMotion/FramerMotions';
 
 export default function Rules() {
   return (
-    <div className="relative w-screen min-h-screen flex flex-col items-center justify-center overflow-hidden">
+    <div
+      id="rules"
+      className="relative w-screen min-h-screen flex flex-col items-center justify-center overflow-hidden"
+    >
       <div className="absolute top-0 left-0 w-full h-full z-0">
         <img className="object-cover w-full h-full" src={BGImage} alt="background piano studio" />
       </div>

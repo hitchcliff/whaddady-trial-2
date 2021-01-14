@@ -1,4 +1,6 @@
+import { motion } from 'framer-motion';
 import React from 'react';
+import { SlideRight, SlideUp } from '../FramerMotion/FramerMotions';
 
 export enum Version {
   v1 = 'v1',
@@ -32,17 +34,21 @@ export default function Headings({ text, text2, after, after2, v }: HeadingsProp
         </div>
       ) : (
         <div>
-          <div
+          <motion.div
             className="font-drukwide-bold uppercase text-center text-black z-0 text-4xl md:text-5xl lg:text-6xl "
             style={{ WebkitTextStroke: '2px rgba(255,255,255,.2)' }}
+            {...SlideUp}
           >
             {after} <br />
             {after2}
-            <h2 className="font-drukwide-bold uppercase text-primary z-10 whitespace-nowrap transition-all -mt-4 hover:text-primary text-2xl md:text-3xl lg:text-4xl">
+            <motion.h2
+              className="font-drukwide-bold uppercase text-primary z-10 whitespace-nowrap transition-all -mt-4 hover:text-primary text-2xl md:text-3xl lg:text-4xl"
+              {...SlideUp}
+            >
               {text} <br />
               {text2}
-            </h2>
-          </div>
+            </motion.h2>
+          </motion.div>
         </div>
       )}
     </div>
