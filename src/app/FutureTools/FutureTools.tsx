@@ -1,7 +1,4 @@
 import React from 'react';
-import Headings, { Version } from '../../components/Heading/Headings';
-import HorizontalScroll from 'react-scroll-horizontal';
-import Headset from '../../assets/images/headset.png';
 import { RoutePattern } from '../../routes/RoutePattern';
 import PageNavigation from '../PageNavigation/PageNavigation';
 import Large from './Large';
