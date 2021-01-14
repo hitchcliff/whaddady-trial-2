@@ -1,40 +1,47 @@
 import { Link } from 'react-router-dom';
+import HorizontalScroll from 'react-scroll-horizontal';
 import { RoutePattern } from '../../routes/RoutePattern';
 
 export default function Navigation() {
   return (
-    <div className="overflow-x-scroll overflow-y-hidden w-full">
-      <ul className="flex flex-row uppercase whitespace-nowrap text-white gap-32 text-9xl">
-        <li>
-          <Link className="link" to={RoutePattern.Home}>
-            home
-          </Link>
-        </li>
-        <li>
-          <Link className="link" to={RoutePattern.Rules}>
-            rules
-          </Link>
-        </li>
-        <li>
-          <Link className="link" to={RoutePattern.FutureTools}>
-            future tools
-          </Link>
-        </li>
-        <li>
-          <Link className="link" to={RoutePattern.Testimonials}>
-            testimonials
-          </Link>
-        </li>
-        <li>
-          <Link className="link" to={RoutePattern.HowItWorks}>
-            how it works
-          </Link>
-        </li>
-        <li>
-          <Link className="link" to={RoutePattern.SumbmitYourMusic}>
-            submit you music
-          </Link>
-        </li>
+    <div className="m-auto z-10" style={{ width: '72.333%' }}>
+      <ul className="flex flex-row uppercase whitespace-nowrap text-white gap-32 text-7xl">
+        <HorizontalScroll
+          pageLock={true}
+          reverseScroll={true}
+          config={{ stiffness: 30, damping: 10 }}
+        >
+          <li>
+            <Link className="link mr-60" to={RoutePattern.Home}>
+              home
+            </Link>
+          </li>
+          <li>
+            <Link className="link mr-60" to={RoutePattern.Rules}>
+              rules
+            </Link>
+          </li>
+          <li>
+            <Link className="link mr-60" to={RoutePattern.FutureTools}>
+              future tools
+            </Link>
+          </li>
+          <li>
+            <Link className="link mr-60" to={RoutePattern.Testimonials}>
+              testimonials
+            </Link>
+          </li>
+          <li>
+            <Link className="link mr-60" to={RoutePattern.HowItWorks}>
+              how it works
+            </Link>
+          </li>
+          <li>
+            <Link className="link" to={RoutePattern.SumbmitYourMusic}>
+              submit you music
+            </Link>
+          </li>
+        </HorizontalScroll>
       </ul>
     </div>
   );

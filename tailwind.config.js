@@ -10,6 +10,7 @@ module.exports = {
       stroke: {
         white: '#ffffff',
       },
+      width: (theme) => ({}),
     },
   },
   variants: {
