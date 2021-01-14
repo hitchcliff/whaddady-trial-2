@@ -7,9 +7,10 @@ interface PageNavigationProps {
   to: RoutePattern;
   text: string;
   text2?: string;
+  className?: string;
 }
 
-export default function PageNavigation({ to, text, text2 }: PageNavigationProps) {
+export default function PageNavigation({ to, text, text2, className }: PageNavigationProps) {
   return (
     <div className="z-10 mt-10 w-full">
       <div className="flex flex-row justify-between z-10 mr-auto px-10">
@@ -24,7 +25,9 @@ export default function PageNavigation({ to, text, text2 }: PageNavigationProps)
         </div>
       </div>
       <div className="ml-auto mr-12 mt-12">
-        <Next text={text} after={text2 ? text2 : 'next'} to={to} />
+        <div className={className}>
+          <Next text={text} after={text2 ? text2 : 'next'} to={to} />
+        </div>
       </div>
     </div>
   );

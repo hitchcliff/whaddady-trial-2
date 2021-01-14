@@ -15,27 +15,27 @@ export default function SubmitMusic() {
             <label className="text-white uppercase" htmlFor="first">
               first name
             </label>
-            <input className="rounded-sm px-4 py-2 mt-2" type="text" name="first" />
+            <input className="rounded-md px-4 py-2 mt-2" type="text" name="first" />
           </div>
           <div className="flex flex-col">
             <label className="text-white uppercase" htmlFor="first">
-              first name
+              last name
             </label>
-            <input className="rounded-sm px-4 py-2 mt-2" type="text" name="first" />
+            <input className="rounded-md px-4 py-2 mt-2" type="text" name="first" />
           </div>
         </div>
-        <div className="flex flex-row justify-center items-center">
+        <div className="flex flex-row justify-center items-center mt-3">
           <div className="flex flex-col mr-5">
             <label className="text-white uppercase" htmlFor="first">
-              first name
+              email
             </label>
-            <input className="rounded-sm px-4 py-2 mt-2" type="text" name="first" />
+            <input className="rounded-md px-4 py-2 mt-2" type="email" name="first" />
           </div>
           <div className="flex flex-col">
             <label className="text-white uppercase" htmlFor="first">
-              first name
+              your role
             </label>
-            <input className="rounded-sm px-4 py-2 mt-2" type="text" name="first" />
+            <input className="rounded-md px-4 py-2 mt-2" type="text" name="first" />
           </div>
         </div>
         <div className="m-auto mt-5">
@@ -44,9 +44,7 @@ export default function SubmitMusic() {
           </button>
         </div>
       </form>
-      <div className="pr-36">
-        <PageNavigation to={RoutePattern.Home} text="home" text2="go back" />
-      </div>
+      <PageNavigation className="pr-36" to={RoutePattern.Home} text="home" text2="go back" />
     </div>
   );
 }
