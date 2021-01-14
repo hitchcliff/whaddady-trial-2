@@ -33,12 +33,12 @@ export default function Headings({ text, text2, after, after2, v }: HeadingsProp
       ) : (
         <div>
           <div
-            className="font-drukwide-bold uppercase text-center text-black text-6xl z-0 text-opacity-0"
+            className="font-drukwide-bold uppercase text-center text-black z-0 text-4xl md:text-5xl lg:text-6xl "
             style={{ WebkitTextStroke: '2px rgba(255,255,255,.2)' }}
           >
             {after} <br />
             {after2}
-            <h2 className="font-drukwide-bold uppercase text-4xl text-primary z-10 whitespace-nowrap transition-all -mt-4  hover:text-primary">
+            <h2 className="font-drukwide-bold uppercase text-primary z-10 whitespace-nowrap transition-all -mt-4 hover:text-primary text-2xl md:text-3xl lg:text-4xl">
               {text} <br />
               {text2}
             </h2>
