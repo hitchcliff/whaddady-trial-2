@@ -8,11 +8,11 @@ import { SlideUp } from '../../components/FramerMotion/FramerMotions';
 export default function Large() {
   return (
     <HorizontalScroll pageLock={true} reverseScroll={true} config={{ stiffness: 30, damping: 10 }}>
-      <div className="flex flex-row items-center mr-16 mt-10" style={{ width: '80vw' }}>
-        <div className="flex flex-col">
+      <div className="flex flex-row items-center mr-16 mt-10 px-20" style={{ width: '80vw' }}>
+        <div className="flex flex-col mr-20">
           <div className="py-10">
             <Headings text="in one app" after="a&nbsp;record" after2="company" v={Version.v2} />
-            <motion.p className="text-white mt-8 px-20" {...SlideUp}>
+            <motion.p className="text-white mt-8 " {...SlideUp}>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi, quod. Expedita ad
               aperiam recusandae ipsa, dolore eaque necessitatibus consequatur autem ducimus? Quo
               aut iste facilis!
@@ -30,8 +30,9 @@ export default function Large() {
       </div>
       <div className="py-20 m-auto w-auto">
         <Headings after="music" text="distribution" v={Version.v2} />
-        <motion.p className="text-white mt-8" {...SlideUp}>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, quasi.?
+        <motion.p className="text-white mt-8 px-20" {...SlideUp}>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa a consequuntur beatae fuga.
+          Eum ullam illum nulla aspernatur mollitia culpa.
         </motion.p>
       </div>
     </HorizontalScroll>

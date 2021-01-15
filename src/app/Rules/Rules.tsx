@@ -29,36 +29,48 @@ export default function Rules() {
           reverseScroll={true}
           config={{ stiffness: 30, damping: 10 }}
         >
-          <Item str="1" className="pl-20 lg:hpl-56">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto accusantium,
-            perspiciatis similique quas delectus necessitatibus deleniti corporis exercitationem aut
-            consequuntur non illum libero fugiat facere nobis molestias quisquam, eos error.
-          </Item>
-          <Item str="2" className="pl-20">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto accusantium,
-            perspiciatis similique quas delectus necessitatibus deleniti corporis exercitationem aut
-            consequuntur non illum libero fugiat facere nobis molestias quisquam, eos error.
-          </Item>
-          <Item str="3" className="pl-20">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto accusantium,
-            perspiciatis similique quas delectus necessitatibus deleniti corporis exercitationem aut
-            consequuntur non illum libero fugiat facere nobis molestias quisquam, eos error.
-          </Item>
-          <Item str="4" className="pl-20">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto accusantium,
-            perspiciatis similique quas delectus necessitatibus deleniti corporis exercitationem aut
-            consequuntur non illum libero fugiat facere nobis molestias quisquam, eos error.
-          </Item>
-          <Item str="5" className="pl-20">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto accusantium,
-            perspiciatis similique quas delectus necessitatibus deleniti corporis exercitationem aut
-            consequuntur non illum libero fugiat facere nobis molestias quisquam, eos error.
-          </Item>
-          <Item str="6" className="pl-20">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto accusantium,
-            perspiciatis similique quas delectus necessitatibus deleniti corporis exercitationem aut
-            consequuntur non illum libero fugiat facere nobis molestias quisquam, eos error.
-          </Item>
+          <div className="rule-item">
+            <Item str="1" className="pl-20 lg:hpl-56">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto accusantium,
+              perspiciatis similique quas delectus necessitatibus deleniti corporis exercitationem
+              aut consequuntur non illum libero fugiat facere nobis molestias quisquam, eos error.
+            </Item>
+          </div>
+          <div>
+            <Item str="2" className="pl-20">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto accusantium,
+              perspiciatis similique quas delectus necessitatibus deleniti corporis exercitationem
+              aut consequuntur non illum libero fugiat facere nobis molestias quisquam, eos error.
+            </Item>
+          </div>
+          <div>
+            <Item str="3" className="pl-20">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto accusantium,
+              perspiciatis similique quas delectus necessitatibus deleniti corporis exercitationem
+              aut consequuntur non illum libero fugiat facere nobis molestias quisquam, eos error.
+            </Item>
+          </div>
+          <div>
+            <Item str="4" className="pl-20">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto accusantium,
+              perspiciatis similique quas delectus necessitatibus deleniti corporis exercitationem
+              aut consequuntur non illum libero fugiat facere nobis molestias quisquam, eos error.
+            </Item>
+          </div>
+          <div>
+            <Item str="5" className="pl-20">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto accusantium,
+              perspiciatis similique quas delectus necessitatibus deleniti corporis exercitationem
+              aut consequuntur non illum libero fugiat facere nobis molestias quisquam, eos error.
+            </Item>
+          </div>
+          <div className="rule-item">
+            <Item str="6" className="pl-20">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto accusantium,
+              perspiciatis similique quas delectus necessitatibus deleniti corporis exercitationem
+              aut consequuntur non illum libero fugiat facere nobis molestias quisquam, eos error.
+            </Item>
+          </div>
         </HorizontalScroll>
       </div>
       <PageNavigation to={RoutePattern.FutureTools} text="future tools" />

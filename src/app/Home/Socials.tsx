@@ -12,7 +12,7 @@ export default function Socials() {
         <li className="mr-5">
           <a href="!#">
             <svg
-              className="text-primary"
+              className="text-primary hover:text-white"
               aria-hidden="true"
               width="13px"
               xmlns="http://www.w3.org/2000/svg"
@@ -28,7 +28,7 @@ export default function Socials() {
         <li className="mr-5">
           <a href="!#">
             <svg
-              className="text-primary"
+              className="text-primary hover:text-white"
               aria-hidden="true"
               width="24px"
               xmlns="http://www.w3.org/2000/svg"
@@ -44,7 +44,7 @@ export default function Socials() {
         <li className="mr-5">
           <a href="!#">
             <svg
-              className="text-primary"
+              className="text-primary hover:text-white"
               aria-hidden="true"
               width="25px"
               xmlns="http://www.w3.org/2000/svg"
@@ -59,7 +59,7 @@ export default function Socials() {
         </li>
         <li className="mr-5">
           <svg
-            className="text-primary"
+            className="text-primary hover:text-white"
             aria-hidden="true"
             width="33px"
             xmlns="http://www.w3.org/2000/svg"
@@ -74,7 +74,7 @@ export default function Socials() {
         <li>
           <a href="!#">
             <svg
-              className="text-primary"
+              className="text-primary hover:text-white"
               aria-hidden="true"
               width="22px"
               xmlns="http://www.w3.org/2000/svg"
