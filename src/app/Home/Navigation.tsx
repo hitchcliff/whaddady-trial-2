@@ -1,10 +1,22 @@
 import { motion } from 'framer-motion';
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import HorizontalScroll from 'react-scroll-horizontal';
 import { d_slideright } from '../../components/FramerMotion/FramerMotions';
 import { RoutePattern } from '../../routes/RoutePattern';
 
-export default function Navigation() {
+interface NavigationProps {
+  onClick: (e: string) => void;
+}
+
+export default function Navigation({ onClick }: NavigationProps) {
+  const [selected, setSelected] = useState<string>('');
+
+  useEffect(() => {
+    if (!selected) return;
+    onClick(selected);
+  }, [selected]);
+
   return (
     <div>
       <motion.ul
@@ -16,32 +28,32 @@ export default function Navigation() {
           reverseScroll={true}
           config={{ stiffness: 30, damping: 10 }}
         >
-          <li>
+          <li onClick={() => setSelected('home')}>
             <Link className="link mr-24 lg:mr-60" to={RoutePattern.Home}>
               home
             </Link>
           </li>
-          <li>
+          <li onClick={() => setSelected('rules')}>
             <Link className="link mr-24 lg:mr-60" to={RoutePattern.Rules}>
               rules
             </Link>
           </li>
-          <li>
+          <li onClick={() => setSelected('future tools')}>
             <Link className="link mr-24 lg:mr-60" to={RoutePattern.FutureTools}>
               future tools
             </Link>
           </li>
-          <li>
+          <li onClick={() => setSelected('testimonials')}>
             <Link className="link mr-24 lg:mr-60" to={RoutePattern.Testimonials}>
               testimonials
             </Link>
           </li>
-          <li>
+          <li onClick={() => setSelected('how it works')}>
             <Link className="link mr-24 lg:mr-60" to={RoutePattern.HowItWorks}>
               how it works
             </Link>
           </li>
-          <li>
+          <li onClick={() => setSelected('submit your music')}>
             <Link className="link" to={RoutePattern.SumbmitYourMusic}>
               submit you music
             </Link>

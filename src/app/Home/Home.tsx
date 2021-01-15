@@ -8,12 +8,20 @@ import {
   d_slideright,
   FadeInThenFadeOut,
   ScaleInThenScaleOut,
-  SlideLeftThenSlideRight,
 } from '../../components/FramerMotion/FramerMotions';
+import { useState } from 'react';
+import TV from './TV';
 
 export default function Home() {
+  const [selected, setSelected] = useState<string>('');
+
+  console.log(selected);
+
   return (
-    <div className="relative min-h-screen flex flex-col overflow-x-hidden">
+    <motion.div
+      className="relative min-h-screen flex flex-col overflow-x-hidden"
+      {...ScaleInThenScaleOut}
+    >
       <motion.div
         className="absolute z-10 hidden lg:block"
         style={{ width: '145px', top: '80px', left: '79px' }}
@@ -21,6 +29,8 @@ export default function Home() {
       >
         <Socials />
       </motion.div>
+
+      {/* logo */}
       <motion.div
         className="absolute z-10 transform -translate-x-1/2"
         style={{ top: '115px', left: '50%' }}
@@ -28,6 +38,12 @@ export default function Home() {
       >
         <Logo />
       </motion.div>
+
+      {/* selected */}
+      <div className="z-10 mx-auto">
+        <TV selected={selected} />
+      </div>
+
       <motion.div
         className="absolute z-10 transform -skew-y-3 hidden lg:block"
         style={{ width: '180px', top: '82px', right: '70px' }}
@@ -44,7 +60,7 @@ export default function Home() {
           transform: 'translate(-50%, -100%)',
         }}
       >
-        <Navigation />
+        <Navigation onClick={setSelected} />
       </div>
 
       {/* smaller */}
@@ -53,7 +69,7 @@ export default function Home() {
         style={{ top: '43%', transform: 'translateY(-50%)' }}
         {...d_slideright}
       >
-        <Navigation />
+        <Navigation onClick={setSelected} />
       </motion.div>
 
       {/* desktop */}
@@ -75,13 +91,8 @@ export default function Home() {
       </motion.div>
 
       <div className="absolute top-0 left-0 z-0 h-full w-full">
-        <motion.img
-          className="object-cover w-full h-full"
-          src={BGImage}
-          alt="music studio"
-          {...ScaleInThenScaleOut}
-        />
+        <img className="object-cover w-full h-full" src={BGImage} alt="music studio" />
       </div>
-    </div>
+    </motion.div>
   );
 }
