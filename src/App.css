@@ -6,4 +6,5 @@
 
 body {
   font-family: 'Icomoon', sans-serif;
+  overflow-x: hidden;
 }

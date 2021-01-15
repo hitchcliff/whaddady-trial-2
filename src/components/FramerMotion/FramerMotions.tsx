@@ -10,12 +10,8 @@ export const FadeInThenFadeOut: MotionProps = {
   },
   exit: {
     opacity: 0,
-    transition: {},
   },
-  transition: {
-    ...transition,
-    delay: 1.2,
-  },
+  transition,
 };
 
 export const SlideLeftThenSlideRight: MotionProps = {
@@ -68,9 +64,9 @@ export const SlideUp: MotionProps = {
 
 export const ScaleInThenScaleOut: MotionProps = {
   initial: {
-    y: -40,
-    scale: 1.5,
-    opacity: 0.5,
+    y: 0,
+    scale: 1,
+    opacity: 1,
   },
   animate: {
     y: 0,
