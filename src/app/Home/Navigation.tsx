@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import HorizontalScroll from 'react-scroll-horizontal';
-import { SlideLeftThenSlideRight } from '../../components/FramerMotion/FramerMotions';
+import { d_slideright } from '../../components/FramerMotion/FramerMotions';
 import { RoutePattern } from '../../routes/RoutePattern';
 
 export default function Navigation() {
@@ -9,7 +9,7 @@ export default function Navigation() {
     <div>
       <motion.ul
         className="flex flex-row uppercase whitespace-nowrap text-white gap-32 text-3xl sm:text-4xl md:text-5xl lg:text-7xl"
-        {...SlideLeftThenSlideRight}
+        {...d_slideright}
       >
         <HorizontalScroll
           pageLock={true}

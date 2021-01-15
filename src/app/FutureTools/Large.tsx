@@ -3,7 +3,7 @@ import { Version } from '../../components/Heading/Headings';
 import Headset from '../../assets/images/headset.png';
 import HorizontalScroll from 'react-scroll-horizontal';
 import { motion } from 'framer-motion';
-import { SlideUp } from '../../components/FramerMotion/FramerMotions';
+import { SlideRight, SlideUp } from '../../components/FramerMotion/FramerMotions';
 
 export default function Large() {
   return (
@@ -12,7 +12,7 @@ export default function Large() {
         <div className="flex flex-col mr-20">
           <div className="py-10">
             <Headings text="in one app" after="a&nbsp;record" after2="company" v={Version.v2} />
-            <motion.p className="text-white mt-8 " {...SlideUp}>
+            <motion.p className="text-white mt-8 " {...SlideRight}>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi, quod. Expedita ad
               aperiam recusandae ipsa, dolore eaque necessitatibus consequatur autem ducimus? Quo
               aut iste facilis!
@@ -30,7 +30,7 @@ export default function Large() {
       </div>
       <div className="py-20 m-auto w-auto">
         <Headings after="music" text="distribution" v={Version.v2} />
-        <motion.p className="text-white mt-8 px-20" {...SlideUp}>
+        <motion.p className="text-white mt-8 px-20" {...SlideRight}>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa a consequuntur beatae fuga.
           Eum ullam illum nulla aspernatur mollitia culpa.
         </motion.p>

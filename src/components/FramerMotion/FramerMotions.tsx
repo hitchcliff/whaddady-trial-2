@@ -10,14 +10,11 @@ export const FadeInThenFadeOut: MotionProps = {
   },
   exit: {
     opacity: 0,
-    transition: {
-      ...transition,
-      delay: 0,
-    },
+    transition: {},
   },
   transition: {
     ...transition,
-    delay: 1,
+    delay: 1.2,
   },
 };
 
@@ -73,7 +70,7 @@ export const ScaleInThenScaleOut: MotionProps = {
   initial: {
     y: -40,
     scale: 1.5,
-    opacity: 0.9,
+    opacity: 0.5,
   },
   animate: {
     y: 0,
@@ -84,12 +81,30 @@ export const ScaleInThenScaleOut: MotionProps = {
     },
   },
   exit: {
-    y: 100,
+    opacity: 1,
+    translateY: 600,
     scale: 2.5,
-    opacity: 0.5,
     transition: {
-      duration: 3,
+      duration: 5,
     },
   },
   transition,
+};
+
+// dedicated for homepage
+export const d_slideright: MotionProps = {
+  initial: {
+    x: -400,
+    opacity: 0,
+  },
+  animate: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      delay: 2.5,
+    },
+  },
+  exit: {
+    opacity: 0,
+  },
 };

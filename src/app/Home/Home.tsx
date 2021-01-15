@@ -5,6 +5,7 @@ import Logo from './Logo';
 import Cta from './Cta';
 import { motion } from 'framer-motion';
 import {
+  d_slideright,
   FadeInThenFadeOut,
   ScaleInThenScaleOut,
   SlideLeftThenSlideRight,
@@ -50,7 +51,7 @@ export default function Home() {
       <motion.div
         className="absolute mx-auto z-10 w-full md:w-10/12 block lg:hidden"
         style={{ top: '43%', transform: 'translateY(-50%)' }}
-        {...SlideLeftThenSlideRight}
+        {...d_slideright}
       >
         <Navigation />
       </motion.div>
