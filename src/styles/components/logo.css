@@ -4,6 +4,37 @@
   left: 49.5%;
 }
 
+@media (max-width: 1600px) {
+  .logo {
+    top: 134px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .logo {
+    top: 148px;
+  }
+}
+
+@media (max-width: 1366px) {
+  .logo {
+    top: 100px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .logo {
+    top: 113px;
+  }
+}
+
+/* heights */
+@media (max-height: 1080px) {
+  .logo {
+    top: 174px;
+  }
+}
+
 @media (max-height: 980px) {
   .logo {
     top: 180px;
@@ -18,7 +49,7 @@
 
 @media (max-height: 768px) {
   .logo {
-    top: 145px;
+    top: 124px;
   }
 }
 
