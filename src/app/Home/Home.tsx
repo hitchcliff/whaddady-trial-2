@@ -20,11 +20,7 @@ export default function Home() {
       className="relative min-h-screen flex flex-col overflow-x-hidden"
       {...ScaleInThenScaleOut}
     >
-      <motion.div
-        className="absolute z-10 hidden lg:block"
-        style={{ width: '145px', top: '80px', left: '79px' }}
-        {...FadeInThenFadeOut}
-      >
+      <motion.div className="socials" {...FadeInThenFadeOut}>
         <Socials />
       </motion.div>
 
@@ -38,11 +34,7 @@ export default function Home() {
         <TV selected={selected} />
       </div>
 
-      <motion.div
-        className="absolute z-10 transform -skew-y-3 hidden lg:block"
-        style={{ width: '180px', top: '82px', right: '70px' }}
-        {...FadeInThenFadeOut}
-      >
+      <motion.div className="cta" {...FadeInThenFadeOut}>
         <Cta />
       </motion.div>
 
@@ -50,15 +42,6 @@ export default function Home() {
       <div className="navigation">
         <Navigation onClick={setSelected} />
       </div>
-
-      {/* smaller
-      <motion.div
-        className="absolute mx-auto z-10 w-full md:w-10/12 md:left-16 block lg:hidden"
-        style={{ top: '43%', transform: 'translateY(-50%)' }}
-        {...d_slideright}
-      >
-        <Navigation onClick={setSelected} />
-      </motion.div> */}
 
       {/* desktop */}
       <motion.div

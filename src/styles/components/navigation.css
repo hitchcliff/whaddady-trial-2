@@ -7,9 +7,38 @@
   transform: translate(-50%, -50%);
 }
 
+/* width */
 @media (min-width: 1200px) {
   .navigation {
-    width: 1180px;
+    width: 73.333%;
     left: 49.5%;
   }
+}
+
+/* desktop */
+@media (max-height: 980px) {
+}
+
+/* tablet */
+@media (max-height: 853px) {
+}
+
+/* desktop */
+@media (max-height: 768px) {
+}
+
+/* mobile */
+@media (max-height: 667px) {
+}
+
+/* mobile */
+@media (max-height: 640px) {
+}
+
+/* mobile */
+@media (max-height: 568px) {
+}
+
+/* mobile */
+@media (max-height: 480px) {
 }
