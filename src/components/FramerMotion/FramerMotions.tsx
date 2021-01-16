@@ -64,8 +64,8 @@ export const SlideUp: MotionProps = {
 
 export const ScaleInThenScaleOut: MotionProps = {
   initial: {
-    y: 0,
-    scale: 1,
+    y: 500,
+    scale: 2.5,
     opacity: 1,
   },
   animate: {
@@ -73,7 +73,7 @@ export const ScaleInThenScaleOut: MotionProps = {
     opacity: 1,
     scale: 1,
     transition: {
-      duration: 2,
+      duration: 4,
     },
   },
   exit: {
