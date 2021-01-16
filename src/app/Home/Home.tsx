@@ -44,20 +44,7 @@ export default function Home() {
       </div>
 
       {/* desktop */}
-      <motion.div
-        className="absolute z-10 transform -translate-x-1/2 hidden lg:block"
-        style={{ bottom: '235px', left: '49.6%' }}
-        {...FadeInThenFadeOut}
-      >
-        <Logo spinning />
-      </motion.div>
-
-      {/* smaller */}
-      <motion.div
-        className="absolute z-10 transform -translate-x-1/2 block lg:hidden"
-        style={{ bottom: '200px', left: '49.6%' }}
-        {...FadeInThenFadeOut}
-      >
+      <motion.div className="spinning-logo" {...FadeInThenFadeOut}>
         <Logo spinning />
       </motion.div>
 

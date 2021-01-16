@@ -640,30 +640,6 @@ video {
   left: 49.5%;
 }
 
-@media (max-width: 1600px) {
-  .logo {
-    top: 134px;
-  }
-}
-
-@media (max-width: 1440px) {
-  .logo {
-    top: 148px;
-  }
-}
-
-@media (max-width: 1366px) {
-  .logo {
-    top: 100px;
-  }
-}
-
-@media (max-width: 1280px) {
-  .logo {
-    top: 113px;
-  }
-}
-
 /* heights */
 
 @media (max-height: 1080px) {
@@ -719,6 +695,30 @@ video {
 
   .logo img {
     width: 120px;
+  }
+}
+
+@media (max-width: 1600px) {
+  .logo {
+    top: 134px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .logo {
+    top: 148px;
+  }
+}
+
+@media (max-width: 1366px) {
+  .logo {
+    top: 100px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .logo {
+    top: 113px;
   }
 }
 
@@ -788,6 +788,32 @@ video {
   transform: skew(0deg, 2deg);
 }
 
+/* heights */
+
+@media (max-height: 1080px) {
+  .socials {
+    width: 182px;
+    top: 116px;
+    left: 102px;
+  }
+}
+
+@media (max-height: 980px) {
+  .socials {
+    width: 179px;
+    top: 119px;
+    left: 101px;
+  }
+}
+
+@media (max-height: 768px) {
+  .socials {
+    top: 82px;
+    left: 77px;
+    width: 151px;
+  }
+}
+
 /* desktop */
 
 @media (max-width: 1650px) {
@@ -836,32 +862,6 @@ video {
   }
 }
 
-/* heights */
-
-@media (max-height: 1080px) {
-  .socials {
-    width: 182px;
-    top: 116px;
-    left: 102px;
-  }
-}
-
-@media (max-height: 980px) {
-  .socials {
-    width: 179px;
-    top: 119px;
-    left: 101px;
-  }
-}
-
-@media (max-height: 768px) {
-  .socials {
-    top: 82px;
-    left: 77px;
-    width: 151px;
-  }
-}
-
 .cta {
   position: absolute;
   z-index: 10;
@@ -877,6 +877,22 @@ video {
   width: 180px;
   top: 82px;
   right: 70px;
+}
+
+/* heights */
+
+@media (max-height: 980px) {
+  .cta {
+    top: 119px;
+    right: 108px;
+  }
+}
+
+@media (max-height: 780px) {
+  .cta {
+    top: 84px;
+    right: 72px;
+  }
 }
 
 /* desktop */
@@ -928,20 +944,39 @@ video {
   }
 }
 
-/* heights */
+.spinning-logo {
+  position: absolute;
+  z-index: 10;
+}
 
 @media (max-height: 980px) {
-  .cta {
-    top: 119px;
-    right: 108px;
+  .spinning-logo {
+    bottom: 307px;
+    left: 49.1%;
   }
 }
 
 @media (max-height: 780px) {
-  .cta {
-    top: 84px;
-    right: 72px;
+  .spinning-logo {
+    bottom: 233px;
+    left: 48.8%;
   }
+}
+
+@media (max-width: 1600px) {
+  .spinning-logo {
+    bottom: 247px;
+    left: 49%;
+  }
+}
+
+@media (max-width: 1440px) {
+}
+
+@media (max-width: 1366px) {
+}
+
+@media (max-width: 1280px) {
 }
 
 .space-y-0 > :not([hidden]) ~ :not([hidden]) {

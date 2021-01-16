@@ -30,7 +30,7 @@ export default function Socials() {
             <svg
               className="text-primary hover:text-white"
               aria-hidden="true"
-              width="24px"
+              width="23px"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 512 512"
             >
@@ -46,7 +46,7 @@ export default function Socials() {
             <svg
               className="text-primary hover:text-white"
               aria-hidden="true"
-              width="25px"
+              width="20px"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 448 512"
             >
@@ -61,7 +61,7 @@ export default function Socials() {
           <svg
             className="text-primary hover:text-white"
             aria-hidden="true"
-            width="33px"
+            width="29px"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 576 512"
           >
@@ -76,7 +76,7 @@ export default function Socials() {
             <svg
               className="text-primary hover:text-white"
               aria-hidden="true"
-              width="22px"
+              width="19px"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 384 512"
             >

@@ -1,0 +1,32 @@
+.spinning-logo {
+  @apply absolute z-10;
+}
+
+@media (max-height: 980px) {
+  .spinning-logo {
+    bottom: 307px;
+    left: 49.1%;
+  }
+}
+
+@media (max-height: 780px) {
+  .spinning-logo {
+    bottom: 233px;
+    left: 48.8%;
+  }
+}
+@media (max-width: 1600px) {
+  .spinning-logo {
+    bottom: 247px;
+    left: 49%;
+  }
+}
+
+@media (max-width: 1440px) {
+}
+
+@media (max-width: 1366px) {
+}
+
+@media (max-width: 1280px) {
+}

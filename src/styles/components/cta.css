@@ -4,6 +4,20 @@
   top: 82px;
   right: 70px;
 }
+/* heights */
+@media (max-height: 980px) {
+  .cta {
+    top: 119px;
+    right: 108px;
+  }
+}
+
+@media (max-height: 780px) {
+  .cta {
+    top: 84px;
+    right: 72px;
+  }
+}
 
 /* desktop */
 @media (max-width: 1650px) {
@@ -49,20 +63,5 @@
 @media (max-width: 1230px) {
   .cta {
     display: none;
-  }
-}
-
-/* heights */
-@media (max-height: 980px) {
-  .cta {
-    top: 119px;
-    right: 108px;
-  }
-}
-
-@media (max-height: 780px) {
-  .cta {
-    top: 84px;
-    right: 72px;
   }
 }
