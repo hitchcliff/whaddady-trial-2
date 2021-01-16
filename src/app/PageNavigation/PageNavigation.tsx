@@ -30,7 +30,9 @@ export default function PageNavigation({ to, text, text2, className }: PageNavig
           x
         </Link>
         <motion.div className="pr-10" {...SlideRight}>
-          <img className="w-36 md:w-56 point-right" src={ArrowToRight} alt="arrow to right" />
+          <Link to={to}>
+            <img className="w-36 md:w-56 point-right" src={ArrowToRight} alt="arrow to right" />
+          </Link>
         </motion.div>
       </motion.div>
       <motion.div className="ml-auto mr-12 mt-12" {...SlideLeftThenSlideRight}>

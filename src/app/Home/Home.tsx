@@ -30,7 +30,7 @@ export default function Home() {
       </motion.div>
 
       {/* selected */}
-      <div className="z-10 mx-auto">
+      <div className="logo z-10 mx-auto">
         <TV selected={selected} />
       </div>
 
