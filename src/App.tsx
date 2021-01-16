@@ -14,13 +14,13 @@ gsap.registerPlugin(CSSPlugin, ScrollTrigger);
 function App() {
   const [loader, setLoader] = useState(true);
 
-  useEffect(() => {
-    setTimeout(() => {
-      setLoader(false);
-    }, 5000);
-  }, []);
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     setLoader(false);
+  //   }, 5000);
+  // }, []);
 
-  if (loader) return <Preloader />;
+  // if (loader) return <Preloader />;
 
   return (
     <div className="w-full h-full font-icomoon-regular bg-black">

@@ -55,7 +55,7 @@ export default function Navigation({ onClick }: NavigationProps) {
           </li>
           <li onClick={() => setSelected('submit your music')}>
             <Link className="link" to={RoutePattern.SumbmitYourMusic}>
-              submit you music
+              submit your music
             </Link>
           </li>
         </HorizontalScroll>

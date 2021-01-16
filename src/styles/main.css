@@ -624,6 +624,89 @@ video {
   --tw-translate-y: -50%;
 }
 
+.logo {
+  position: absolute;
+  z-index: 10;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  --tw-translate-x: -50%;
+  top: 115px;
+  left: 49.5%;
+}
+
+@media (max-height: 980px) {
+  .logo {
+    top: 180px;
+  }
+}
+
+@media (max-height: 853px) {
+  .logo {
+    top: 160px;
+  }
+}
+
+@media (max-height: 768px) {
+  .logo {
+    top: 145px;
+  }
+}
+
+@media (max-height: 667px) {
+  .logo {
+    top: 125px;
+  }
+}
+
+@media (max-height: 640px) {
+  .logo {
+    top: 105px;
+  }
+}
+
+@media (max-height: 568px) {
+  .logo {
+    top: 100px;
+  }
+
+  .logo img {
+    width: 140px;
+  }
+}
+
+@media (max-height: 480px) {
+  .logo {
+    top: 90px;
+  }
+
+  .logo img {
+    width: 120px;
+  }
+}
+
+.navigation {
+  position: absolute;
+  z-index: 10;
+  /* width: '72.333%'; */
+  width: 100%;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (min-width: 1200px) {
+  .navigation {
+    width: 1180px;
+    left: 49.5%;
+  }
+}
+
 .space-y-0 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));

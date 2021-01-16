@@ -15,8 +15,6 @@ import TV from './TV';
 export default function Home() {
   const [selected, setSelected] = useState<string>('');
 
-  console.log(selected);
-
   return (
     <motion.div
       className="relative min-h-screen flex flex-col overflow-x-hidden"
@@ -31,11 +29,7 @@ export default function Home() {
       </motion.div>
 
       {/* logo */}
-      <motion.div
-        className="absolute z-10 transform -translate-x-1/2"
-        style={{ top: '115px', left: '50%' }}
-        {...FadeInThenFadeOut}
-      >
+      <motion.div className="logo" {...FadeInThenFadeOut}>
         <Logo />
       </motion.div>
 
@@ -53,24 +47,18 @@ export default function Home() {
       </motion.div>
 
       {/* desktop */}
-      <div
-        className="absolute z-10 transform top-1/2 left-1/2 hidden lg:block"
-        style={{
-          width: '72.333%',
-          transform: 'translate(-50%, -100%)',
-        }}
-      >
+      <div className="navigation">
         <Navigation onClick={setSelected} />
       </div>
 
-      {/* smaller */}
+      {/* smaller
       <motion.div
-        className="absolute mx-auto z-10 w-full md:w-10/12 block lg:hidden"
+        className="absolute mx-auto z-10 w-full md:w-10/12 md:left-16 block lg:hidden"
         style={{ top: '43%', transform: 'translateY(-50%)' }}
         {...d_slideright}
       >
         <Navigation onClick={setSelected} />
-      </motion.div>
+      </motion.div> */}
 
       {/* desktop */}
       <motion.div

@@ -1,0 +1,15 @@
+.navigation {
+  @apply absolute z-10;
+  /* width: '72.333%'; */
+  width: 100%;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (min-width: 1200px) {
+  .navigation {
+    width: 1180px;
+    left: 49.5%;
+  }
+}
