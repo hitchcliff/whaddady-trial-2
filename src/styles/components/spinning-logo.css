@@ -23,10 +23,20 @@
 }
 
 @media (max-width: 1440px) {
+  .spinning-logo {
+    bottom: 254px;
+    left: 48.8%;
+  }
 }
 
 @media (max-width: 1366px) {
+  .spinning-logo {
+    bottom: 199px;
+  }
 }
 
 @media (max-width: 1280px) {
+  .spinning-logo {
+    bottom: 208px;
+  }
 }
