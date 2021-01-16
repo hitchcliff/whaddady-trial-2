@@ -28,33 +28,57 @@ export default function Navigation({ onClick }: NavigationProps) {
           reverseScroll={true}
           config={{ stiffness: 30, damping: 10 }}
         >
-          <li onClick={() => setSelected('home')}>
-            <Link className="link mr-24 lg:mr-60" to={RoutePattern.Home}>
+          <li>
+            <Link
+              className="link mr-24 lg:mr-60"
+              to={RoutePattern.Home}
+              onClick={() => setSelected('home')}
+            >
               home
             </Link>
           </li>
-          <li onClick={() => setSelected('rules')}>
-            <Link className="link mr-24 lg:mr-60" to={RoutePattern.Rules}>
+          <li>
+            <Link
+              className="link mr-24 lg:mr-60"
+              to={RoutePattern.Rules}
+              onClick={() => setSelected('rules')}
+            >
               rules
             </Link>
           </li>
-          <li onClick={() => setSelected('future tools')}>
-            <Link className="link mr-24 lg:mr-60" to={RoutePattern.FutureTools}>
+          <li>
+            <Link
+              className="link mr-24 lg:mr-60"
+              to={RoutePattern.FutureTools}
+              onClick={() => setSelected('future tools')}
+            >
               future tools
             </Link>
           </li>
-          <li onClick={() => setSelected('testimonials')}>
-            <Link className="link mr-24 lg:mr-60" to={RoutePattern.Testimonials}>
+          <li>
+            <Link
+              className="link mr-24 lg:mr-60"
+              to={RoutePattern.Testimonials}
+              onClick={() => setSelected('testimonials')}
+            >
               testimonials
             </Link>
           </li>
-          <li onClick={() => setSelected('how it works')}>
-            <Link className="link mr-24 lg:mr-60" to={RoutePattern.HowItWorks}>
+          <li>
+            <Link
+              className="link mr-24 lg:mr-60"
+              to={RoutePattern.HowItWorks}
+              onClick={() => setSelected('how it works')}
+            >
               how it works
             </Link>
           </li>
-          <li onClick={() => setSelected('submit your music')}>
-            <Link className="link" to={RoutePattern.SumbmitYourMusic}>
+          <li>
+            <Link
+              className="link"
+              to={RoutePattern.SumbmitYourMusic}
+              onClick={() => setSelected('submit your music')}
+            >
               submit your music
             </Link>
           </li>
