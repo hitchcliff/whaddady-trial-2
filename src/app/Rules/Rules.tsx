@@ -6,8 +6,13 @@ import PageNavigation from '../PageNavigation/PageNavigation';
 import Item from './Item';
 import { motion } from 'framer-motion';
 import { SlideRight } from '../../components/FramerMotion/FramerMotions';
+import { Draggable } from '../../components';
 
 export default function Rules() {
+  useEffect(() => {
+    const ele: HTMLElement | any = document.querySelector('.rules-overflow');
+    Draggable(ele);
+  }, []);
   return (
     <div
       id="rules"
@@ -25,6 +30,7 @@ export default function Rules() {
       </div>
       <div className="w-full mt-12 flex flex-col">
         <HorizontalScroll
+          className="rules-overflow"
           pageLock={true}
           reverseScroll={true}
           config={{ stiffness: 30, damping: 10 }}

@@ -1,10 +1,17 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import HorizontalScroll from 'react-scroll-horizontal';
+import { Draggable } from '../../components';
 
 export default function Socials() {
+  useEffect(() => {
+    const ele: HTMLElement | any = document.querySelector('.socials-overflow');
+    Draggable(ele);
+  }, []);
+
   return (
     <ul className="flex flex-row">
       <HorizontalScroll
+        className="socials-overflow"
         pageLock={true}
         reverseScroll={true}
         config={{ stiffness: 30, damping: 10 }}

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import HorizontalScroll from 'react-scroll-horizontal';
 import { RoutePattern } from '../../routes/RoutePattern';
 import BGImage from '../../assets/images/bg-piano.jpg';
@@ -7,8 +7,13 @@ import PageNavigation from '../PageNavigation/PageNavigation';
 import ShowcaseImage from '../../assets/images/testimonial.jpg';
 import { SlideLeftThenSlideRight } from '../../components/FramerMotion/FramerMotions';
 import { motion } from 'framer-motion';
+import { Draggable } from '../../components';
 
 export default function Testimonials() {
+  useEffect(() => {
+    const ele: HTMLElement | any = document.querySelector('.scroll-horizontal');
+    Draggable(ele);
+  }, []);
   return (
     <div className="relative w-screen min-h-screen flex flex-col items-center justify-center overflow-hidden">
       <div className="absolute top-0 left-0 w-full h-full z-0">

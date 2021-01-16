@@ -1,7 +1,8 @@
 import { motion } from 'framer-motion';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import HorizontalScroll from 'react-scroll-horizontal';
+import { Draggable } from '../../components';
 import { d_slideright } from '../../components/FramerMotion/FramerMotions';
 import { RoutePattern } from '../../routes/RoutePattern';
 
@@ -10,6 +11,11 @@ interface NavigationProps {
 }
 
 export default function Navigation({ onClick }: NavigationProps) {
+  useEffect(() => {
+    const ele: HTMLElement | any = document.querySelector('.nav-overflow');
+    Draggable(ele);
+  }, []);
+
   return (
     <div>
       <motion.ul
@@ -17,6 +23,7 @@ export default function Navigation({ onClick }: NavigationProps) {
         {...d_slideright}
       >
         <HorizontalScroll
+          className="nav-overflow"
           pageLock={true}
           reverseScroll={true}
           config={{ stiffness: 30, damping: 10 }}

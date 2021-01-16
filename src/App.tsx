@@ -1,4 +1,4 @@
-import React, { Suspense, useEffect, useRef, useState } from 'react';
+import React, { Suspense, useEffect, useState } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import AppRoutes from './routes/AppRoutes';
 import './styles/main.css';
@@ -14,11 +14,11 @@ gsap.registerPlugin(CSSPlugin, ScrollTrigger);
 function App() {
   const [loader, setLoader] = useState(true);
 
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     setLoader(false);
-  //   }, 5000);
-  // }, []);
+  useEffect(() => {
+    setTimeout(() => {
+      setLoader(false);
+    }, 5000);
+  }, []);
 
   // if (loader) return <Preloader />;
 
