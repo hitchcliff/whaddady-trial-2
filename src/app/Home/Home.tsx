@@ -35,7 +35,7 @@ export default function Home() {
       </div>
 
       <motion.div className="cta" {...FadeInThenFadeOut}>
-        <Cta />
+        <Cta onClick={setSelected} />
       </motion.div>
 
       {/* desktop */}

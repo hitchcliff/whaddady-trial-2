@@ -10,13 +10,6 @@ interface NavigationProps {
 }
 
 export default function Navigation({ onClick }: NavigationProps) {
-  const [selected, setSelected] = useState<string>('');
-
-  useEffect(() => {
-    if (!selected) return;
-    onClick(selected);
-  }, [selected]);
-
   return (
     <div>
       <motion.ul
@@ -32,7 +25,7 @@ export default function Navigation({ onClick }: NavigationProps) {
             <Link
               className="link mr-24 lg:mr-60"
               to={RoutePattern.Home}
-              onClick={() => setSelected('home')}
+              onClick={() => onClick('')}
             >
               home
             </Link>
@@ -41,7 +34,7 @@ export default function Navigation({ onClick }: NavigationProps) {
             <Link
               className="link mr-24 lg:mr-60"
               to={RoutePattern.Rules}
-              onClick={() => setSelected('rules')}
+              onClick={() => onClick('rules')}
             >
               rules
             </Link>
@@ -50,7 +43,7 @@ export default function Navigation({ onClick }: NavigationProps) {
             <Link
               className="link mr-24 lg:mr-60"
               to={RoutePattern.FutureTools}
-              onClick={() => setSelected('future tools')}
+              onClick={() => onClick('future tools')}
             >
               future tools
             </Link>
@@ -59,7 +52,7 @@ export default function Navigation({ onClick }: NavigationProps) {
             <Link
               className="link mr-24 lg:mr-60"
               to={RoutePattern.Testimonials}
-              onClick={() => setSelected('testimonials')}
+              onClick={() => onClick('testimonials')}
             >
               testimonials
             </Link>
@@ -68,7 +61,7 @@ export default function Navigation({ onClick }: NavigationProps) {
             <Link
               className="link mr-24 lg:mr-60"
               to={RoutePattern.HowItWorks}
-              onClick={() => setSelected('how it works')}
+              onClick={() => onClick('how it works')}
             >
               how it works
             </Link>
@@ -77,7 +70,7 @@ export default function Navigation({ onClick }: NavigationProps) {
             <Link
               className="link"
               to={RoutePattern.SumbmitYourMusic}
-              onClick={() => setSelected('submit your music')}
+              onClick={() => onClick('submit your music')}
             >
               submit your music
             </Link>

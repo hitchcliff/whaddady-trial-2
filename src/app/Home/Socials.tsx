@@ -3,7 +3,7 @@ import HorizontalScroll from 'react-scroll-horizontal';
 
 export default function Socials() {
   return (
-    <ul className="flex flex-row skew-y-3">
+    <ul className="flex flex-row">
       <HorizontalScroll
         pageLock={true}
         reverseScroll={true}

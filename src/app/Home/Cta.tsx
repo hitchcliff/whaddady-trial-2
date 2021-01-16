@@ -1,9 +1,18 @@
+import { Dispatch, SetStateAction } from 'react';
 import { Link } from 'react-router-dom';
 import { RoutePattern } from '../../routes/RoutePattern';
 
-export default function Cta() {
+interface CtaProps {
+  onClick: (e: string) => void;
+}
+
+export default function Cta({ onClick }: CtaProps) {
   return (
-    <Link className="text-center hover:text-primary" to={RoutePattern.SumbmitYourMusic}>
+    <Link
+      className="text-center hover:text-primary"
+      to={RoutePattern.SumbmitYourMusic}
+      onClick={() => onClick('submit your music')}
+    >
       <span className="block uppercase text-white text-xs font-drukwide-bold  hover:text-primary">
         submit your
       </span>
