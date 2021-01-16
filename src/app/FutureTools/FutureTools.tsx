@@ -3,7 +3,7 @@ import { RoutePattern } from '../../routes/RoutePattern';
 import PageNavigation from '../PageNavigation/PageNavigation';
 import Large from './Large';
 import Small from './Small';
-import BGImage from '../../assets/images/bg-piano.jpg';
+import BGImage from '../../assets/images/bg-piano-mini.jpg';
 import { Draggable } from '../../components';
 
 export default function FutureTools() {

@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
 import Logo from '../../assets/images/Logo.gif';
-import BGImage from '../../assets/images/background.jpg';
+import BGImage from '../../assets/images/background-mini.jpg';
 import { Power3, TweenLite } from 'gsap';
 
 export default function Preloader() {

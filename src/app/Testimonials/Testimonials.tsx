@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import HorizontalScroll from 'react-scroll-horizontal';
 import { RoutePattern } from '../../routes/RoutePattern';
-import BGImage from '../../assets/images/bg-piano.jpg';
+import BGImage from '../../assets/images/bg-piano-mini.jpg';
 import Item from './Item';
 import PageNavigation from '../PageNavigation/PageNavigation';
 import ShowcaseImage from '../../assets/images/testimonial.jpg';

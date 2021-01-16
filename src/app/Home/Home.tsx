@@ -1,5 +1,5 @@
 import Navigation from './Navigation';
-import BGImage from '../../assets/images/background.jpg';
+import BGImage from '../../assets/images/background-mini.jpg';
 import Socials from './Socials';
 import Logo from './Logo';
 import Cta from './Cta';
