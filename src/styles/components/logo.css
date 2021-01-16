@@ -1,6 +1,6 @@
 .logo {
   @apply absolute z-10 transform -translate-x-1/2;
-  top: 115px;
+  top: 124px;
   left: 49.5%;
 }
 
@@ -37,7 +37,7 @@
 
 @media (max-height: 980px) {
   .logo {
-    top: 180px;
+    top: 174px;
   }
 }
 

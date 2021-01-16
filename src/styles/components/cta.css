@@ -53,10 +53,16 @@
 }
 
 /* heights */
-@media (max-height: 1080px) {
-  .socials {
-    width: 182px;
-    top: 123px;
-    right: 115px;
+@media (max-height: 980px) {
+  .cta {
+    top: 119px;
+    right: 108px;
+  }
+}
+
+@media (max-height: 780px) {
+  .cta {
+    top: 84px;
+    right: 72px;
   }
 }
