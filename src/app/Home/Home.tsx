@@ -4,7 +4,10 @@ import Socials from './Socials';
 import Logo from './Logo';
 import Cta from './Cta';
 import { motion } from 'framer-motion';
-import { FadeInThenFadeOut } from '../../components/FramerMotion/FramerMotions';
+import {
+  FadeInThenFadeOut,
+  ScaleInThenScaleOut,
+} from '../../components/FramerMotion/FramerMotions';
 import { useState } from 'react';
 import TV from './TV';
 
@@ -14,16 +17,15 @@ export default function Home() {
   return (
     <motion.div
       className="relative min-h-screen flex flex-col justify-between overflow-x-hidden"
-      // {...ScaleInThenScaleOut}
+      {...ScaleInThenScaleOut}
     >
+      <motion.div className="socials" {...FadeInThenFadeOut}>
+        <Socials />
+      </motion.div>
       <div></div>
       <div>hey</div>
       <div>hey</div>
       <div className="z-10 flex flex-row justify-between items-center">
-        <motion.div className="socials" {...FadeInThenFadeOut}>
-          <Socials />
-        </motion.div>
-
         <div>hey</div>
         <div></div>
         <div></div>
@@ -33,12 +35,12 @@ export default function Home() {
         <div></div>
         <div>
           {/* logo */}
-          <motion.div className="logo" {...FadeInThenFadeOut}>
+          <motion.div className={!selected ? 'logo' : 'hidden'} {...FadeInThenFadeOut}>
             <Logo />
           </motion.div>
 
           {/* selected */}
-          <div className="-logo z-10">
+          <div className={selected ? 'logo z-10 block' : 'hidden'}>
             <TV selected={selected} />
           </div>
         </div>
@@ -49,14 +51,13 @@ export default function Home() {
         <div></div>
         <div></div>
         <div></div>
-
-        <motion.div className="cta" {...FadeInThenFadeOut}>
-          <Cta onClick={setSelected} />
-        </motion.div>
       </div>
       <div></div>
       <div></div>
       <div></div>
+      <motion.div className="cta" {...FadeInThenFadeOut}>
+        <Cta onClick={setSelected} />
+      </motion.div>
       {/* desktop */}
       <div className="navigation z-10">
         <Navigation onClick={setSelected} />
@@ -83,7 +84,6 @@ export default function Home() {
       <div className="absolute top-0 left-0 z-0 h-full w-full">
         <img className="object-cover w-full h-full" src={BGImage} alt="music studio" />
       </div>
-      {/* <TestPage /> */}
     </motion.div>
   );
 }

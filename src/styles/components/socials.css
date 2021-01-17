@@ -19,33 +19,17 @@
 
 @media (max-height: 980px) {
   .socials {
-    width: 179px;
-    top: 119px;
-    left: 101px;
+    width: 186px;
+    top: 118px;
+    left: 99px;
   }
 }
 
 @media (max-height: 768px) {
   .socials {
-    top: 82px;
-    left: 77px;
+    top: 103px;
+    left: 85px;
     width: 151px;
-  }
-}
-
-/* desktop */
-@media (max-width: 1650px) {
-  .socials {
-    top: 128px;
-    left: 55px;
-  }
-}
-
-@media (max-width: 1600px) {
-  .socials {
-    width: 152px;
-    top: 87px;
-    left: 84px;
   }
 }
 

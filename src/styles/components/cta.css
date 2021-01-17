@@ -14,23 +14,8 @@
 
 @media (max-height: 780px) {
   .cta {
-    top: 84px;
+    top: 99px;
     right: 72px;
-  }
-}
-
-/* desktop */
-@media (max-width: 1650px) {
-  .cta {
-    top: 128px;
-    right: 55px;
-  }
-}
-
-@media (max-width: 1600px) {
-  .cta {
-    top: 86px;
-    right: 77px;
   }
 }
 

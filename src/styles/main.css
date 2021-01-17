@@ -787,34 +787,17 @@ video {
 
 @media (max-height: 980px) {
   .socials {
-    width: 179px;
-    top: 119px;
-    left: 101px;
+    width: 186px;
+    top: 118px;
+    left: 99px;
   }
 }
 
 @media (max-height: 768px) {
   .socials {
-    top: 82px;
-    left: 77px;
+    top: 103px;
+    left: 85px;
     width: 151px;
-  }
-}
-
-/* desktop */
-
-@media (max-width: 1650px) {
-  .socials {
-    top: 128px;
-    left: 55px;
-  }
-}
-
-@media (max-width: 1600px) {
-  .socials {
-    width: 152px;
-    top: 87px;
-    left: 84px;
   }
 }
 
@@ -877,24 +860,8 @@ video {
 
 @media (max-height: 780px) {
   .cta {
-    top: 84px;
+    top: 99px;
     right: 72px;
-  }
-}
-
-/* desktop */
-
-@media (max-width: 1650px) {
-  .cta {
-    top: 128px;
-    right: 55px;
-  }
-}
-
-@media (max-width: 1600px) {
-  .cta {
-    top: 86px;
-    right: 77px;
   }
 }
 
@@ -986,7 +953,7 @@ video {
   }
 } */
 
-@media (max-height: 980px) {
+/* @media (max-height: 980px) {
   .spin-logo {
     margin-top: 14px;
     margin-right: 19px;
@@ -998,7 +965,7 @@ video {
     margin-bottom: 8px;
     margin-right: 8px;
   }
-}
+} */
 
 .space-y-0 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
