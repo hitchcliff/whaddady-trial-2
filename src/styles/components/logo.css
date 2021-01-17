@@ -1,10 +1,10 @@
-.logo {
+/* .logo {
   @apply absolute z-10 transform -translate-x-1/2;
   top: 124px;
   left: 49.5%;
-}
+} */
 /* heights */
-@media (max-height: 1080px) {
+/* @media (max-height: 1080px) {
   .logo {
     top: 174px;
   }
@@ -16,7 +16,7 @@
   }
 }
 
-@media (max-height: 853px) {
+@media (max-height: 854px) {
   .logo {
     top: 160px;
   }
@@ -48,14 +48,7 @@
     width: 140px;
   }
 }
-@media (max-height: 480px) {
-  .logo {
-    top: 90px;
-  }
-  .logo img {
-    width: 120px;
-  }
-}
+
 
 @media (max-width: 1600px) {
   .logo {
@@ -78,5 +71,17 @@
 @media (max-width: 1280px) {
   .logo {
     top: 113px;
+  }
+}
+
+@media (max-width: 376px) {
+  .logo {
+    top: 155px;
+  }
+} */
+
+@media (max-height: 480px) {
+  .logo img {
+    width: 120px;
   }
 }
