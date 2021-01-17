@@ -986,6 +986,20 @@ video {
   }
 } */
 
+@media (max-height: 980px) {
+  .spin-logo {
+    margin-top: 14px;
+    margin-right: 19px;
+  }
+}
+
+@media (max-height: 780px) {
+  .spin-logo {
+    margin-bottom: 8px;
+    margin-right: 8px;
+  }
+}
+
 .space-y-0 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));

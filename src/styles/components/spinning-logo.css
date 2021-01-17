@@ -52,3 +52,17 @@
     bottom: 251px;
   }
 } */
+
+@media (max-height: 980px) {
+  .spin-logo {
+    margin-top: 14px;
+    margin-right: 19px;
+  }
+}
+
+@media (max-height: 780px) {
+  .spin-logo {
+    margin-bottom: 8px;
+    margin-right: 8px;
+  }
+}
