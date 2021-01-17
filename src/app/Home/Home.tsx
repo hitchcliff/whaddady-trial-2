@@ -70,7 +70,7 @@ export default function Home() {
         className="spinning-logo z-10 mx-auto flex flex-row justify-around"
         {...FadeInThenFadeOut}
       >
-        <div className="spin-logo">
+        <div className="spin-logo mt-3 mr-2 sm:mt-0 lg:-mt-6 2xl:mt-3 2xl:mr-3">
           <Logo spinning />
         </div>
       </motion.div>
