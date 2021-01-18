@@ -23,7 +23,7 @@ export default function Navigation({ onClick }: NavigationProps) {
         {...d_slideright}
       >
         <HorizontalScroll
-          className="nav-overflow overflow-y-hidden"
+          className="nav-overflow overflow-y-hidden touch-true"
           pageLock={true}
           reverseScroll={true}
           config={{ stiffness: 30, damping: 10 }}

@@ -6,7 +6,7 @@
   transform: skew(0deg, 2deg);
 }
 
-@media (max-width: 1200px) and (max-height: 599px) {
+@media (max-width: 1299px) {
   .socials {
     display: none;
   }

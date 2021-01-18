@@ -10,6 +10,8 @@ export default function Draggable(ele: HTMLElement) {
       // Get the current mouse position
       x: e.clientX,
     };
+
+    // desktop
     document.addEventListener('mousemove', mouseMoveHandler);
     document.addEventListener('mouseup', mouseUpHandler);
   }
@@ -20,6 +22,7 @@ export default function Draggable(ele: HTMLElement) {
 
     // Scroll the element
     ele.scrollLeft = pos.left - dx;
+    console.log(ele.scrollLeft);
   }
 
   function mouseUpHandler() {
@@ -31,5 +34,5 @@ export default function Draggable(ele: HTMLElement) {
   }
 
   // Attach the handler
-  ele.addEventListener('mousedown', mouseDownHandler);
+  ele.addEventListener('mousedown', mouseDownHandler); //desktop
 }

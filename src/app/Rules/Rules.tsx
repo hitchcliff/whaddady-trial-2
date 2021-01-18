@@ -30,7 +30,7 @@ export default function Rules() {
       </div>
       <div className="w-full mt-12 flex flex-col">
         <HorizontalScroll
-          className="rules-overflow"
+          className="rules-overflow touch-true"
           pageLock={true}
           reverseScroll={true}
           config={{ stiffness: 30, damping: 10 }}

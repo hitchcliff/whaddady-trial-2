@@ -17,13 +17,6 @@ export default function Home() {
   return (
     <motion.div
       className="flex flex-col justify-between items-center overflow-x-hidden min-h-screen"
-      style={{
-        background: `url(${BGImage})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
-        backgroundAttachment: 'fixed',
-      }}
       {...ScaleInThenScaleOut}
     >
       <motion.div className="socials" {...FadeInThenFadeOut}>
@@ -51,6 +44,10 @@ export default function Home() {
       <motion.div className="spinning-logo" {...FadeInThenFadeOut}>
         <Logo spinning />
       </motion.div>
+
+      <div className="w-full h-full absolute top-0 left-0">
+        <img className="w-full h-full object-cover" src={BGImage} alt="studio" />
+      </div>
     </motion.div>
   );
 }

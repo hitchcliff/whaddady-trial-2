@@ -31,6 +31,7 @@ export default function Testimonials() {
       </div>
       <div className="w-full flex flex-col mt-0 lg:mt-12">
         <HorizontalScroll
+          className="touch-true"
           pageLock={true}
           reverseScroll={true}
           config={{ stiffness: 30, damping: 10 }}
