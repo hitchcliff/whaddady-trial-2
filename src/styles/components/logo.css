@@ -2,10 +2,10 @@
   @apply absolute z-10 transform -translate-x-1/2;
   top: 124px;
   left: 49.5%;
-} */
+}  */
 
 /* heights */
-/* @media (max-height: 1080px) {
+/* /* @media (max-height: 1080px) {
   .logo {
     top: 174px;
   }
@@ -79,10 +79,10 @@
   .logo {
     top: 155px;
   }
-} */
+}
 
 @media (max-height: 480px) {
   .logo img {
     width: 120px;
   }
-}
+} */

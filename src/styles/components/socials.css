@@ -20,14 +20,14 @@
 @media (max-height: 980px) {
   .socials {
     width: 186px;
-    top: 118px;
+    top: 107px;
     left: 99px;
   }
 }
 
 @media (max-height: 768px) {
   .socials {
-    top: 103px;
+    top: 69px;
     left: 85px;
     width: 151px;
   }

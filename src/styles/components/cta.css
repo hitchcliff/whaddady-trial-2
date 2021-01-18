@@ -7,14 +7,14 @@
 /* heights */
 @media (max-height: 980px) {
   .cta {
-    top: 119px;
+    top: 107px;
     right: 108px;
   }
 }
 
 @media (max-height: 780px) {
   .cta {
-    top: 99px;
+    top: 68px;
     right: 72px;
   }
 }
