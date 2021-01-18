@@ -24,7 +24,7 @@ export default function Home() {
         backgroundRepeat: 'no-repeat',
         backgroundAttachment: 'fixed',
       }}
-      // {...ScaleInThenScaleOut}
+      {...ScaleInThenScaleOut}
     >
       <motion.div className="socials" {...FadeInThenFadeOut}>
         <Socials />

@@ -23,13 +23,14 @@ export default function Navigation({ onClick }: NavigationProps) {
         {...d_slideright}
       >
         <HorizontalScroll
-          className="nav-overflow"
+          className="nav-overflow overflow-y-hidden"
           pageLock={true}
           reverseScroll={true}
           config={{ stiffness: 30, damping: 10 }}
         >
           <li>
             <Link
+              draggable={false}
               className="link mr-24 lg:mr-60"
               to={RoutePattern.Home}
               onClick={() => onClick('')}
@@ -39,6 +40,7 @@ export default function Navigation({ onClick }: NavigationProps) {
           </li>
           <li>
             <Link
+              draggable={false}
               className="link mr-24 lg:mr-60"
               to={RoutePattern.Rules}
               onClick={() => onClick('rules')}
@@ -48,6 +50,7 @@ export default function Navigation({ onClick }: NavigationProps) {
           </li>
           <li>
             <Link
+              draggable={false}
               className="link mr-24 lg:mr-60"
               to={RoutePattern.FutureTools}
               onClick={() => onClick('future tools')}
@@ -57,6 +60,7 @@ export default function Navigation({ onClick }: NavigationProps) {
           </li>
           <li>
             <Link
+              draggable={false}
               className="link mr-24 lg:mr-60"
               to={RoutePattern.Testimonials}
               onClick={() => onClick('testimonials')}
@@ -66,6 +70,7 @@ export default function Navigation({ onClick }: NavigationProps) {
           </li>
           <li>
             <Link
+              draggable={false}
               className="link mr-24 lg:mr-60"
               to={RoutePattern.HowItWorks}
               onClick={() => onClick('how it works')}
@@ -75,6 +80,7 @@ export default function Navigation({ onClick }: NavigationProps) {
           </li>
           <li>
             <Link
+              draggable={false}
               className="link"
               to={RoutePattern.SumbmitYourMusic}
               onClick={() => onClick('submit your music')}
