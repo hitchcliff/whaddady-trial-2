@@ -20,7 +20,7 @@ function App() {
     }, 5000);
   }, []);
 
-  // if (loader) return <Preloader />;
+  if (loader) return <Preloader />;
 
   return (
     <div className="w-full h-full font-icomoon-regular bg-black">
