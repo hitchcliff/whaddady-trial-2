@@ -16,74 +16,41 @@ export default function Home() {
 
   return (
     <motion.div
-      className="relative min-h-screen flex flex-col justify-between overflow-x-hidden"
-      {...ScaleInThenScaleOut}
+      className="flex flex-col justify-between items-center overflow-x-hidden min-h-screen"
+      style={{
+        background: `url(${BGImage})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        backgroundAttachment: 'fixed',
+      }}
+      // {...ScaleInThenScaleOut}
     >
       <motion.div className="socials" {...FadeInThenFadeOut}>
         <Socials />
       </motion.div>
-      <div></div>
-      <div>hey</div>
-      <div>hey</div>
-      <div className="z-10 flex flex-row justify-between items-center">
-        <div>hey</div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div>
-          {/* logo */}
-          <motion.div className={!selected ? 'logo' : 'hidden'} {...FadeInThenFadeOut}>
-            <Logo />
-          </motion.div>
 
-          {/* selected */}
-          <div className={selected ? 'logo z-10 block' : 'hidden'}>
-            <TV selected={selected} />
-          </div>
-        </div>
-        <div>hey</div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-      <div></div>
-      <div></div>
-      <div></div>
       <motion.div className="cta" {...FadeInThenFadeOut}>
         <Cta onClick={setSelected} />
       </motion.div>
-      {/* desktop */}
-      <div className="navigation z-10">
+
+      <div className="z-10 absolute logo">
+        <motion.div className={!selected ? 'logo' : 'hidden'} {...FadeInThenFadeOut}>
+          <Logo />
+        </motion.div>
+
+        <div className={selected ? 'logo z-10 block' : 'hidden'}>
+          <TV selected={selected} />
+        </div>
+      </div>
+
+      <div className="navigation absolute z-10">
         <Navigation onClick={setSelected} />
       </div>
-      <div></div>
-      <div></div>
-      <div></div>
-      {/* desktop */}
-      <motion.div
-        className="spinning-logo z-10 mx-auto flex flex-row justify-around"
-        {...FadeInThenFadeOut}
-      >
-        <div className="spin-logo mt-3 mr-2 sm:mt-0 lg:-mt-6 2xl:mt-3 2xl:mr-3">
-          <Logo spinning />
-        </div>
+
+      <motion.div className="spinning-logo" {...FadeInThenFadeOut}>
+        <Logo spinning />
       </motion.div>
-      <div>hey</div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div className="absolute top-0 left-0 z-0 h-full w-full">
-        <img className="object-cover w-full h-full" src={BGImage} alt="music studio" />
-      </div>
     </motion.div>
   );
 }

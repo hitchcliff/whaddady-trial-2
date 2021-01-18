@@ -1,64 +1,58 @@
 .socials {
   @apply absolute z-10;
-  width: 151px;
-  top: 80px;
-  left: 79px;
 }
 
 .socials ul {
   transform: skew(0deg, 2deg);
 }
-/* heights */
-@media (max-height: 1080px) {
-  .socials {
-    width: 182px;
-    top: 116px;
-    left: 102px;
-  }
-}
 
-@media (max-height: 980px) {
-  .socials {
-    width: 186px;
-    top: 107px;
-    left: 99px;
-  }
-}
-
-@media (max-height: 768px) {
-  .socials {
-    top: 69px;
-    left: 85px;
-    width: 151px;
-  }
-}
-
-@media (max-width: 1440px) {
-  .socials {
-    top: 104px;
-    left: 49px;
-  }
-}
-
-@media (max-width: 1366px) {
-  .socials {
-    width: 127px;
-    top: 61px;
-    left: 76px;
-  }
-}
-
-@media (max-width: 1280px) {
-  .socials {
-    top: 80px;
-    left: 68px;
-    width: 115px;
-  }
-}
-
-/* desktop */
-@media (max-width: 1230px) {
+@media (max-width: 1200px) and (max-height: 599px) {
   .socials {
     display: none;
+  }
+}
+
+@media (min-width: 1300px) and (min-height: 600px) {
+  .socials {
+    top: 8.5%;
+    left: 5%;
+    width: 129px;
+  }
+}
+
+@media (min-width: 1400px) and (min-height: 700px) {
+  .socials {
+    top: 12%;
+    left: 5.5%;
+  }
+}
+
+@media (min-width: 1500px) and (min-height: 800px) {
+  .socials {
+    width: 140px;
+    top: 14%;
+    left: 3.5%;
+  }
+}
+
+@media (min-width: 1700px) and (min-height: 900px) {
+  .socials {
+    width: 159px;
+    top: 13%;
+    left: 5.5%;
+  }
+}
+
+@media (min-width: 1800px) and (min-height: 800px) {
+  .socials {
+    width: 173px;
+    top: 10%;
+    left: 5.5%;
+  }
+}
+
+@media (min-width: 1900px) {
+  .socials {
+    top: 12%;
   }
 }

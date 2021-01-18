@@ -624,100 +624,25 @@ video {
   --tw-translate-y: -50%;
 }
 
-/* .logo {
-  @apply absolute z-10 transform -translate-x-1/2;
-  top: 124px;
-  left: 49.5%;
-}  */
+.logo {
+  top: 18%;
+}
 
-/* heights */
-
-/* /* @media (max-height: 1080px) {
+@media (min-width: 1800px) {
   .logo {
-    top: 174px;
+    top: 16%;
   }
 }
 
-@media (max-height: 980px) {
+@media (min-height: 900px) {
   .logo {
-    top: 174px;
+    top: 17.5%;
   }
 }
-
-@media (max-height: 854px) {
-  .logo {
-    top: 160px;
-  }
-}
-
-@media (max-height: 768px) {
-  .logo {
-    top: 124px;
-  }
-}
-
-@media (max-height: 667px) {
-  .logo {
-    top: 125px;
-  }
-}
-
-@media (max-height: 640px) {
-  .logo {
-    top: 105px;
-  }
-}
-
-@media (max-height: 568px) {
-  .logo {
-    top: 100px;
-  }
-  .logo img {
-    width: 140px;
-  }
-}
-
-
-@media (max-width: 1600px) {
-  .logo {
-    top: 134px;
-  }
-}
-
-@media (max-width: 1440px) {
-  .logo {
-    top: 148px;
-  }
-}
-
-@media (max-width: 1366px) {
-  .logo {
-    top: 100px;
-  }
-}
-
-@media (max-width: 1280px) {
-  .logo {
-    top: 113px;
-  }
-}
-
-@media (max-width: 376px) {
-  .logo {
-    top: 155px;
-  }
-}
-
-@media (max-height: 480px) {
-  .logo img {
-    width: 120px;
-  }
-} */
 
 .navigation {
   width: 100%;
-  margin: 0 auto;
-  margin-top: 10px;
+  top: 42%;
 }
 
 /* width */
@@ -766,69 +691,60 @@ video {
 .socials {
   position: absolute;
   z-index: 10;
-  width: 151px;
-  top: 80px;
-  left: 79px;
 }
 
 .socials ul {
   transform: skew(0deg, 2deg);
 }
 
-/* heights */
-
-@media (max-height: 1080px) {
-  .socials {
-    width: 182px;
-    top: 116px;
-    left: 102px;
-  }
-}
-
-@media (max-height: 980px) {
-  .socials {
-    width: 186px;
-    top: 107px;
-    left: 99px;
-  }
-}
-
-@media (max-height: 768px) {
-  .socials {
-    top: 69px;
-    left: 85px;
-    width: 151px;
-  }
-}
-
-@media (max-width: 1440px) {
-  .socials {
-    top: 104px;
-    left: 49px;
-  }
-}
-
-@media (max-width: 1366px) {
-  .socials {
-    width: 127px;
-    top: 61px;
-    left: 76px;
-  }
-}
-
-@media (max-width: 1280px) {
-  .socials {
-    top: 80px;
-    left: 68px;
-    width: 115px;
-  }
-}
-
-/* desktop */
-
-@media (max-width: 1230px) {
+@media (max-width: 1200px) and (max-height: 599px) {
   .socials {
     display: none;
+  }
+}
+
+@media (min-width: 1300px) and (min-height: 600px) {
+  .socials {
+    top: 8.5%;
+    left: 5%;
+    width: 129px;
+  }
+}
+
+@media (min-width: 1400px) and (min-height: 700px) {
+  .socials {
+    top: 12%;
+    left: 5.5%;
+  }
+}
+
+@media (min-width: 1500px) and (min-height: 800px) {
+  .socials {
+    width: 140px;
+    top: 14%;
+    left: 3.5%;
+  }
+}
+
+@media (min-width: 1700px) and (min-height: 900px) {
+  .socials {
+    width: 159px;
+    top: 13%;
+    left: 5.5%;
+  }
+}
+
+@media (min-width: 1800px) and (min-height: 800px) {
+  .socials {
+    width: 173px;
+    top: 10%;
+    left: 5.5%;
+  }
+}
+
+@media (min-width: 1900px) {
+  .socials {
+    top: 12%;
   }
 }
 
@@ -844,128 +760,103 @@ video {
   --tw-scale-y: 1;
   transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   --tw-skew-y: -3deg;
-  width: 180px;
-  top: 82px;
-  right: 70px;
 }
 
-/* heights */
-
-@media (max-height: 980px) {
-  .cta {
-    top: 107px;
-    right: 108px;
-  }
-}
-
-@media (max-height: 780px) {
-  .cta {
-    top: 68px;
-    right: 72px;
-  }
-}
-
-@media (max-width: 1440px) {
-  .cta {
-    top: 104px;
-    right: 43px;
-  }
-}
-
-@media (max-width: 1366px) {
-  .cta {
-    top: 64px;
-    right: 50px;
-  }
-}
-
-@media (max-width: 1280px) {
-  .cta {
-    top: 82px;
-    right: 45px;
-  }
-
-  .cta span {
-    font-size: 10px;
-  }
-}
-
-/* desktop */
-
-@media (max-width: 1230px) {
+@media (max-width: 1200px) and (max-height: 599px) {
   .cta {
     display: none;
   }
 }
 
-/* .spinning-logo {
-  @apply absolute z-10;
+@media (min-width: 1300px) and (min-height: 600px) {
+  .cta {
+    top: 8.5%;
+    right: 5%;
+    width: 129px;
+  }
 }
 
-@media (max-height: 980px) {
+@media (min-width: 1400px) and (min-height: 700px) {
+  .cta {
+    top: 12%;
+    right: 5.5%;
+  }
+}
+
+@media (min-width: 1500px) and (min-height: 800px) {
+  .cta {
+    width: 140px;
+    top: 14%;
+    right: 3.5%;
+  }
+}
+
+@media (min-width: 1700px) and (min-height: 900px) {
+  .cta {
+    width: 159px;
+    top: 13%;
+    right: 5.5%;
+  }
+}
+
+@media (min-width: 1800px) and (min-height: 800px) {
+  .cta {
+    width: 173px;
+    top: 10%;
+    right: 5.5%;
+  }
+}
+
+@media (min-width: 1900px) {
+  .cta {
+    top: 12%;
+  }
+}
+
+.spinning-logo {
+  position: absolute;
+  z-index: 10;
+  bottom: 32.4%;
+  right: 49%;
+}
+
+@media (min-width: 1000px) {
   .spinning-logo {
-    bottom: 307px;
-    left: 49.1%;
+    right: 49.5%;
   }
 }
 
-@media (max-height: 780px) {
+@media (min-width: 1700px) {
   .spinning-logo {
-    bottom: 233px;
-    left: 48.8%;
+    bottom: 32.2%;
+    right: 49.7%;
   }
 }
-@media (max-width: 1600px) {
+
+@media (min-width: 1800px) {
   .spinning-logo {
-    bottom: 247px;
-    left: 49%;
+    bottom: 30.3%;
+    right: 49.8%;
   }
 }
 
-@media (max-width: 1440px) {
+@media (min-width: 1800px) and (min-height: 600px) {
   .spinning-logo {
-    bottom: 252px;
-    left: 48.8%;
+    bottom: 24.3%;
   }
 }
 
-@media (max-width: 1366px) and (max-height: 980px) {
+@media (min-width: 1800px) and (min-height: 700px) {
   .spinning-logo {
-    bottom: 199px;
+    bottom: 27.3%;
   }
 }
 
-@media (max-width: 1366px) and (max-height: 780px) {
+@media (min-width: 1800px) and (min-height: 800px) {
   .spinning-logo {
-    bottom: 253px;
+    bottom: 32%;
   }
 }
-
-@media (max-width: 1280px) and (max-height: 980px) {
-  .spinning-logo {
-    bottom: 208px;
-  }
-}
-
-@media (max-width: 1280px) and (max-height: 780px) {
-  .spinning-logo {
-    bottom: 251px;
-  }
-} */
-
-/* @media (max-height: 980px) {
-  .spin-logo {
-    margin-top: 14px;
-    margin-right: 19px;
-  }
-}
-
-@media (max-height: 780px) {
-  .spin-logo {
-    margin-bottom: 8px;
-    margin-right: 8px;
-  }
-} */
 
 .space-y-0 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
