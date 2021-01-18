@@ -10,6 +10,18 @@
   }
 }
 
+@media (min-width: 1300px) and (min-height: 600px) {
+  .spinning-logo {
+    bottom: 30.5%;
+  }
+}
+
+@media (min-width: 1350px) and (min-height: 600px) {
+  .spinning-logo {
+    bottom: 31%;
+  }
+}
+
 @media (min-width: 1700px) {
   .spinning-logo {
     bottom: 32.2%;

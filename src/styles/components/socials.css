@@ -14,9 +14,15 @@
 
 @media (min-width: 1300px) and (min-height: 600px) {
   .socials {
-    top: 8.5%;
+    top: 11%;
     left: 5%;
     width: 129px;
+  }
+}
+
+@media (min-width: 1350px) and (min-height: 600px) {
+  .socials {
+    top: 11%;
   }
 }
 

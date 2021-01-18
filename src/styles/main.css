@@ -634,6 +634,12 @@ video {
   top: 18%;
 }
 
+@media (min-width: 1300px) and (min-height: 600px) {
+  .logo {
+    top: 16%;
+  }
+}
+
 @media (min-width: 1800px) {
   .logo {
     top: 16%;
@@ -711,9 +717,15 @@ video {
 
 @media (min-width: 1300px) and (min-height: 600px) {
   .socials {
-    top: 8.5%;
+    top: 11%;
     left: 5%;
     width: 129px;
+  }
+}
+
+@media (min-width: 1350px) and (min-height: 600px) {
+  .socials {
+    top: 11%;
   }
 }
 
@@ -776,24 +788,31 @@ video {
 
 @media (min-width: 1300px) and (min-height: 600px) {
   .cta {
-    top: 8.5%;
+    top: 10%;
     right: 5%;
     width: 129px;
+  }
+}
+
+@media (min-width: 1350px) and (min-height: 600px) {
+  .cta {
+    top: 10%;
+    right: 6%;
   }
 }
 
 @media (min-width: 1400px) and (min-height: 700px) {
   .cta {
     top: 12%;
-    right: 5.5%;
+    right: 6%;
   }
 }
 
 @media (min-width: 1500px) and (min-height: 800px) {
   .cta {
     width: 140px;
-    top: 14%;
-    right: 3.5%;
+    top: 13.5%;
+    right: 4%;
   }
 }
 
@@ -816,6 +835,7 @@ video {
 @media (min-width: 1900px) {
   .cta {
     top: 12%;
+    right: 6%;
   }
 }
 
@@ -829,6 +849,18 @@ video {
 @media (min-width: 1000px) {
   .spinning-logo {
     right: 49.5%;
+  }
+}
+
+@media (min-width: 1300px) and (min-height: 600px) {
+  .spinning-logo {
+    bottom: 30.5%;
+  }
+}
+
+@media (min-width: 1350px) and (min-height: 600px) {
+  .spinning-logo {
+    bottom: 31%;
   }
 }
 

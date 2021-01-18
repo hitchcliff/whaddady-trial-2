@@ -2,6 +2,12 @@
   top: 18%;
 }
 
+@media (min-width: 1300px) and (min-height: 600px) {
+  .logo {
+    top: 16%;
+  }
+}
+
 @media (min-width: 1800px) {
   .logo {
     top: 16%;
