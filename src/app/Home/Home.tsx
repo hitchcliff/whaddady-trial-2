@@ -10,6 +10,7 @@ import {
 } from '../../components/FramerMotion/FramerMotions';
 import { useState } from 'react';
 import TV from './TV';
+import { SocialSlider } from '../../components';
 
 export default function Home() {
   const [selected, setSelected] = useState<string>('');
@@ -22,6 +23,10 @@ export default function Home() {
       <motion.div className="socials" {...FadeInThenFadeOut}>
         <Socials />
       </motion.div>
+
+      <div className="z-10 ">
+        <SocialSlider />
+      </div>
 
       <motion.div className="cta" {...FadeInThenFadeOut}>
         <Cta onClick={setSelected} />

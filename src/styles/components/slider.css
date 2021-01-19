@@ -1,0 +1,8 @@
+/* empty */
+.slick-arrow {
+  @apply hidden !important;
+}
+
+.slick-track {
+  @apply flex items-center justify-items-center;
+}

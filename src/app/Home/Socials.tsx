@@ -1,21 +1,9 @@
-import React, { useEffect, useRef } from 'react';
-import HorizontalScroll from 'react-scroll-horizontal';
-import { Draggable } from '../../components';
+import { SocialSlider } from '../../components';
 
 export default function Socials() {
-  useEffect(() => {
-    const ele: HTMLElement | any = document.querySelector('.socials-overflow');
-    Draggable(ele);
-  }, []);
-
   return (
     <ul className="flex flex-row">
-      <HorizontalScroll
-        className="socials-overflow"
-        pageLock={true}
-        reverseScroll={true}
-        config={{ stiffness: 30, damping: 10 }}
-      >
+      <SocialSlider>
         <li className="mr-5">
           <a href="!#">
             <svg
@@ -68,7 +56,7 @@ export default function Socials() {
           <svg
             className="text-primary hover:text-white"
             aria-hidden="true"
-            width="29px"
+            width="27px"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 576 512"
           >
@@ -78,12 +66,12 @@ export default function Socials() {
             />
           </svg>
         </li>
-        <li>
+        <li className="mr-5">
           <a href="!#">
             <svg
               className="text-primary hover:text-white"
               aria-hidden="true"
-              width="19px"
+              width="17px"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 384 512"
             >
@@ -94,7 +82,7 @@ export default function Socials() {
             </svg>
           </a>
         </li>
-      </HorizontalScroll>
+      </SocialSlider>
     </ul>
   );
 }

@@ -645,13 +645,16 @@ video {
   }
 }
 
-.light-carousel-slides-container {
-  /* display: inline-flex; */
-  width: auto !important;
+/* empty */
+
+.slick-arrow {
+  display: none !important;
 }
 
-.light-carousel-slide {
-  width: auto !important;
+.slick-track {
+  display: flex;
+  align-items: center;
+  justify-items: center;
 }
 
 .logo {
@@ -882,12 +885,12 @@ video {
 
 .socials {
   position: absolute;
-  z-index: 10;
   width: 100%;
+  z-index: 10;
 }
 
 .socials ul {
-  transform: skew(0deg, 2deg);
+  transform: skew(0deg, 3.5deg);
 }
 
 /* desktop */
@@ -898,6 +901,10 @@ video {
     left: 0%;
     width: 160px;
   }
+
+  .slick-list {
+    width: 160px !important;
+  }
 }
 
 @media (max-width: 1920px) and (max-height: 1080px) {
@@ -906,71 +913,113 @@ video {
     left: 3%;
     width: 181px;
   }
+
+  .slick-list {
+    width: 181px !important;
+  }
 }
 
 @media (max-width: 1920px) and (max-height: 980px) {
-  .socials {
+  .socials,
+  .slick-cloned {
     top: 13%;
     left: 5.5%;
   }
 }
 
 @media (max-width: 1680px) and (max-height: 1050px) {
-  .socials {
+  .socials,
+  .slick-cloned {
     top: 14%;
     left: 0%;
     width: 139px;
   }
+
+  .slick-list {
+    width: 139px !important;
+  }
 }
 
 @media (max-width: 1600px) and (max-height: 900px) {
-  .socials {
+  .socials,
+  .slick-cloned {
     top: 14%;
     left: 3%;
     width: 146px;
   }
+
+  .slick-list {
+    width: 146px !important;
+  }
 }
 
 @media (max-width: 1600px) and (max-height: 780px) {
-  .socials {
+  .socials,
+  .slick-cloned {
     top: 11%;
     left: 5.5%;
   }
 }
 
 @media (max-width: 1440px) and (max-height: 900px) {
-  .socials {
+  .socials,
+  .slick-cloned,
+  .slick-cloned {
     top: 14%;
     left: 1%;
     width: 103px;
   }
+
+  .slick-list {
+    width: 103px !important;
+  }
 }
 
 @media (max-width: 1366px) and (max-height: 768px) {
-  .socials {
+  .socials,
+  .slick-cloned {
     top: 13%;
     left: 3%;
     width: 129px;
   }
+
+  .slick-list {
+    width: 129px !important;
+  }
 }
 
 @media (max-width: 1280px) and (max-height: 950px) {
-  .socials {
+  .socials,
+  .slick-cloned {
+    display: none;
+  }
+
+  .slick-list {
     display: none;
   }
 }
 
 @media (max-width: 1280px) and (max-height: 768px) {
-  .socials {
+  .socials,
+  .slick-cloned {
     top: 14%;
     left: 1%;
     width: 112px;
     display: block;
   }
+
+  .slick-list {
+    width: 112px;
+  }
 }
 
 @media (max-width: 1024px) {
-  .socials {
+  .socials,
+  .slick-cloned {
+    display: none;
+  }
+
+  .slick-list {
     display: none;
   }
 }
