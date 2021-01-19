@@ -20,3 +20,29 @@
     top: 18%;
   }
 }
+
+/* mobile */
+@media (max-width: 720px) and (max-height: 1280px) {
+  .logo {
+    top: 19%;
+  }
+}
+
+@media (max-width: 540px) and (max-height: 960px) {
+  .logo {
+    top: 19%;
+  }
+}
+
+@media (max-width: 320px) and (max-height: 553px) {
+  .logo {
+    width: 124px;
+  }
+}
+
+@media (max-width: 213px) and (max-height: 320px) {
+  .logo {
+    width: 80px;
+    margin: 0 auto;
+  }
+}
