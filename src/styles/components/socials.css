@@ -1,5 +1,6 @@
 .socials {
   @apply absolute z-10;
+  width: 100%;
 }
 
 .socials ul {
@@ -63,7 +64,7 @@
 
 @media (max-width: 1366px) and (max-height: 768px) {
   .socials {
-    top: 14%;
+    top: 13%;
     left: 3%;
     width: 129px;
   }
