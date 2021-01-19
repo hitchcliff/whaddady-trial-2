@@ -1,3 +1,14 @@
 .scroll-horizontal > div {
   position: static !important;
 }
+
+/* .scroll-horizontal > div::-webkit-scrollbar {
+  @apply w-1 h-10 rounded-full opacity-100;
+}
+
+.scroll-horizontal > div::-webkit-scrollbar {
+  @apply bg-white;
+}
+.scroll-horizontal:hover > div::-webkit-scrollbar-thumb {
+  @apply bg-gray-300 rounded-full;
+} */

@@ -4,52 +4,53 @@
   right: 49%;
 }
 
-@media (min-width: 1000px) {
+/* desktop */
+@media (max-width: 1920px) and (max-height: 1200px) {
   .spinning-logo {
+    bottom: 32.8%;
+    width: 41px;
+  }
+}
+
+@media (max-width: 1920px) and (max-height: 1080px) {
+  .spinning-logo {
+    width: 40px;
+  }
+}
+
+@media (max-width: 1680px) and (max-height: 1050px) {
+  .spinning-logo {
+    width: 35px;
+  }
+}
+
+@media (max-width: 1600px) and (max-height: 900px) {
+  .spinning-logo {
+    bottom: 32.3%;
+  }
+}
+
+@media (max-width: 1440px) and (max-height: 900px) {
+  .spinning-logo {
+    width: 32px;
+  }
+}
+
+@media (max-width: 1280px) and (max-height: 768px) {
+  .spinning-logo {
+    width: 30px;
+  }
+}
+
+@media (max-width: 1024px) and (max-height: 768px) {
+  .spinning-logo {
+    width: 27px;
+  }
+}
+
+@media (max-width: 1024px) and (max-height: 600px) {
+  .spinning-logo {
+    width: 17px;
     right: 49.5%;
-  }
-}
-
-@media (min-width: 1300px) and (min-height: 600px) {
-  .spinning-logo {
-    bottom: 30.5%;
-  }
-}
-
-@media (min-width: 1350px) and (min-height: 600px) {
-  .spinning-logo {
-    bottom: 31%;
-  }
-}
-
-@media (min-width: 1700px) {
-  .spinning-logo {
-    bottom: 32.2%;
-    right: 49.7%;
-  }
-}
-
-@media (min-width: 1800px) {
-  .spinning-logo {
-    bottom: 30.3%;
-    right: 49.8%;
-  }
-}
-
-@media (min-width: 1800px) and (min-height: 600px) {
-  .spinning-logo {
-    bottom: 24.3%;
-  }
-}
-
-@media (min-width: 1800px) and (min-height: 700px) {
-  .spinning-logo {
-    bottom: 27.3%;
-  }
-}
-
-@media (min-width: 1800px) and (min-height: 800px) {
-  .spinning-logo {
-    bottom: 32%;
   }
 }
