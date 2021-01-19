@@ -55,6 +55,30 @@
   }
 }
 
+/* tablet */
+@media (max-width: 800px) and (max-height: 1280px) {
+  .spinning-logo {
+    width: 35px;
+  }
+
+  .spinning-logo img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) and (max-height: 1024px) {
+  .spinning-logo {
+    width: 29px;
+    bottom: 32.5%;
+  }
+}
+
+@media (max-width: 533px) and (max-height: 853px) {
+  .spinning-logo {
+    bottom: 32.3%;
+  }
+}
+
 /* mobile */
 @media (max-width: 720px) and (max-height: 1280px) {
   .spinning-logo {
