@@ -23,6 +23,13 @@
   }
 }
 
+@media (max-width: 1920px) and (max-height: 980px) {
+  .socials {
+    top: 13%;
+    left: 5.5%;
+  }
+}
+
 @media (max-width: 1680px) and (max-height: 1050px) {
   .socials {
     top: 14%;
@@ -36,6 +43,13 @@
     top: 14%;
     left: 3%;
     width: 146px;
+  }
+}
+
+@media (max-width: 1600px) and (max-height: 780px) {
+  .socials {
+    top: 11%;
+    left: 5.5%;
   }
 }
 

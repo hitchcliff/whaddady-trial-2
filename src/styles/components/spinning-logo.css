@@ -18,6 +18,12 @@
   }
 }
 
+@media (max-width: 1920px) and (max-height: 980px) {
+  .spinning-logo {
+    bottom: 31.8%;
+  }
+}
+
 @media (max-width: 1680px) and (max-height: 1050px) {
   .spinning-logo {
     width: 35px;
@@ -27,6 +33,18 @@
 @media (max-width: 1600px) and (max-height: 900px) {
   .spinning-logo {
     bottom: 32.3%;
+  }
+}
+
+@media (max-width: 1600px) and (max-height: 780px) {
+  .spinning-logo {
+    bottom: 31%;
+    width: 25px;
+    right: 49.5%;
+  }
+
+  .spinning-logo img {
+    width: 100%;
   }
 }
 

@@ -18,6 +18,13 @@
   }
 }
 
+@media (max-width: 1920px) and (max-height: 980px) {
+  .navigation {
+    width: 73.333%;
+    left: 13%;
+  }
+}
+
 @media (max-width: 1680px) and (max-height: 1050px) {
   .navigation {
     width: 87%;
@@ -29,6 +36,13 @@
   .navigation {
     width: 79%;
     left: 10%;
+  }
+}
+
+@media (max-width: 1600px) and (max-height: 780px) {
+  .navigation {
+    width: 73.5%;
+    left: 13%;
   }
 }
 
