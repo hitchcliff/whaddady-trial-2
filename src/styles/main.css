@@ -609,23 +609,16 @@ video {
   position: static !important;
 }
 
-.scroll-horizontal > div::-webkit-scrollbar {
-  border-radius: 9999px;
-  height: 2.5rem;
-  opacity: 1;
-  width: 0.25rem;
+/* .scroll-horizontal > div::-webkit-scrollbar {
+  @apply w-1 h-10 rounded-full opacity-100;
 }
 
 .scroll-horizontal > div::-webkit-scrollbar {
-  --tw-bg-opacity: 1;
-  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+  @apply bg-white;
 }
-
 .scroll-horizontal:hover > div::-webkit-scrollbar-thumb {
-  --tw-bg-opacity: 1;
-  background-color: rgba(209, 213, 219, var(--tw-bg-opacity));
-  border-radius: 9999px;
-}
+  @apply bg-gray-300 rounded-full;
+} */
 
 .position-center {
   top: 50%;
