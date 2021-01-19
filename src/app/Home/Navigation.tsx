@@ -1,20 +1,52 @@
 import { motion } from 'framer-motion';
-import { useEffect, useRef, useState } from 'react';
-import { Link, Route } from 'react-router-dom';
+import { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import HorizontalScroll from 'react-scroll-horizontal';
 import { Draggable } from '../../components';
 import { d_slideright } from '../../components/FramerMotion/FramerMotions';
 import { RoutePattern } from '../../routes/RoutePattern';
+
+interface COORD {
+  xDown: number | null;
+  xUp: number | null;
+}
 
 interface NavigationProps {
   onClick: (e: string) => void;
 }
 
 export default function Navigation({ onClick }: NavigationProps) {
+  const COORDS: COORD = {
+    xDown: null,
+    xUp: null,
+  };
+
   useEffect(() => {
     const ele: HTMLElement | any = document.querySelector('.nav-overflow');
     Draggable(ele);
   }, []);
+
+  function mouseDown(e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) {
+    e.preventDefault();
+    COORDS.xUp = null;
+    COORDS.xDown = null;
+
+    COORDS.xDown = e.clientX;
+  }
+
+  function mouseUp(e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) {
+    e.preventDefault();
+    COORDS.xUp = e.clientX;
+  }
+
+  // redirect if not dragged
+  function handleClick(e: React.MouseEvent<HTMLAnchorElement, MouseEvent>, route: RoutePattern) {
+    if (COORDS.xDown !== COORDS.xUp) {
+      e.preventDefault();
+    } else {
+      onClick(route);
+    }
+  }
 
   return (
     <div>
@@ -43,7 +75,11 @@ export default function Navigation({ onClick }: NavigationProps) {
               draggable={false}
               to={RoutePattern.Rules}
               className="link mr-24 lg:mr-60"
-              onClick={() => onClick(RoutePattern.Rules)}
+              onMouseUp={mouseUp}
+              onMouseDown={mouseDown}
+              onClick={(e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) =>
+                handleClick(e, RoutePattern.Rules)
+              }
             >
               rules
             </Link>
@@ -53,7 +89,11 @@ export default function Navigation({ onClick }: NavigationProps) {
               draggable={false}
               className="link mr-24 lg:mr-60"
               to={RoutePattern.FutureTools}
-              onClick={() => onClick(RoutePattern.FutureTools)}
+              onMouseUp={mouseUp}
+              onMouseDown={mouseDown}
+              onClick={(e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) =>
+                handleClick(e, RoutePattern.FutureTools)
+              }
             >
               future tools
             </Link>
@@ -63,7 +103,11 @@ export default function Navigation({ onClick }: NavigationProps) {
               draggable={false}
               className="link mr-24 lg:mr-60"
               to={RoutePattern.Testimonials}
-              onClick={() => onClick(RoutePattern.Testimonials)}
+              onMouseUp={mouseUp}
+              onMouseDown={mouseDown}
+              onClick={(e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) =>
+                handleClick(e, RoutePattern.Testimonials)
+              }
             >
               testimonials
             </Link>
@@ -73,7 +117,11 @@ export default function Navigation({ onClick }: NavigationProps) {
               draggable={false}
               className="link mr-24 lg:mr-60"
               to={RoutePattern.HowItWorks}
-              onClick={() => onClick(RoutePattern.HowItWorks)}
+              onMouseUp={mouseUp}
+              onMouseDown={mouseDown}
+              onClick={(e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) =>
+                handleClick(e, RoutePattern.HowItWorks)
+              }
             >
               how it works
             </Link>
@@ -83,7 +131,11 @@ export default function Navigation({ onClick }: NavigationProps) {
               draggable={false}
               className="link"
               to={RoutePattern.SumbmitYourMusic}
-              onClick={() => onClick(RoutePattern.SumbmitYourMusic)}
+              onMouseUp={mouseUp}
+              onMouseDown={mouseDown}
+              onClick={(e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) =>
+                handleClick(e, RoutePattern.SumbmitYourMusic)
+              }
             >
               submit your music
             </Link>

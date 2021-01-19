@@ -1,7 +1,7 @@
 export default function Draggable(ele: HTMLElement) {
   let pos = { left: 0, x: 0 };
 
-  function mouseDownHandler(e: any) {
+  function mouseDownHandler(e: MouseEvent) {
     ele.style.cursor = 'grabbing';
     ele.style.userSelect = 'none';
 
@@ -16,16 +16,15 @@ export default function Draggable(ele: HTMLElement) {
     document.addEventListener('mouseup', mouseUpHandler);
   }
 
-  function mouseMoveHandler(e: any) {
+  function mouseMoveHandler(e: MouseEvent) {
     // How far the mouse has been moved
     const dx = e.clientX - pos.x;
 
     // Scroll the element
     ele.scrollLeft = pos.left - dx;
-    console.log(ele.scrollLeft);
   }
 
-  function mouseUpHandler() {
+  function mouseUpHandler(e: any) {
     ele.style.cursor = 'grab';
     ele.style.removeProperty('user-select');
 

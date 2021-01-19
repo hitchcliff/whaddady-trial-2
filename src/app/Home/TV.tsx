@@ -43,7 +43,7 @@ export default function TV({ selected }: TVProps) {
         </div>
       );
     }
-    case RoutePattern.Home: {
+    case RoutePattern.SumbmitYourMusic: {
       return (
         <div style={{ marginTop: '-15px', width: '220px' }} className="overflow-hidden">
           <Headings
