@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { useEffect, useRef, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Route } from 'react-router-dom';
 import HorizontalScroll from 'react-scroll-horizontal';
 import { Draggable } from '../../components';
 import { d_slideright } from '../../components/FramerMotion/FramerMotions';
@@ -33,7 +33,7 @@ export default function Navigation({ onClick }: NavigationProps) {
               draggable={false}
               className="link mr-24 lg:mr-60"
               to={RoutePattern.Home}
-              onClick={() => onClick('')}
+              onClick={() => onClick(RoutePattern.Home)}
             >
               home
             </Link>
@@ -41,9 +41,9 @@ export default function Navigation({ onClick }: NavigationProps) {
           <li>
             <Link
               draggable={false}
-              className="link mr-24 lg:mr-60"
               to={RoutePattern.Rules}
-              onClick={() => onClick('rules')}
+              className="link mr-24 lg:mr-60"
+              onClick={() => onClick(RoutePattern.Rules)}
             >
               rules
             </Link>
@@ -53,7 +53,7 @@ export default function Navigation({ onClick }: NavigationProps) {
               draggable={false}
               className="link mr-24 lg:mr-60"
               to={RoutePattern.FutureTools}
-              onClick={() => onClick('future tools')}
+              onClick={() => onClick(RoutePattern.FutureTools)}
             >
               future tools
             </Link>
@@ -63,7 +63,7 @@ export default function Navigation({ onClick }: NavigationProps) {
               draggable={false}
               className="link mr-24 lg:mr-60"
               to={RoutePattern.Testimonials}
-              onClick={() => onClick('testimonials')}
+              onClick={() => onClick(RoutePattern.Testimonials)}
             >
               testimonials
             </Link>
@@ -73,7 +73,7 @@ export default function Navigation({ onClick }: NavigationProps) {
               draggable={false}
               className="link mr-24 lg:mr-60"
               to={RoutePattern.HowItWorks}
-              onClick={() => onClick('how it works')}
+              onClick={() => onClick(RoutePattern.HowItWorks)}
             >
               how it works
             </Link>
@@ -83,7 +83,7 @@ export default function Navigation({ onClick }: NavigationProps) {
               draggable={false}
               className="link"
               to={RoutePattern.SumbmitYourMusic}
-              onClick={() => onClick('submit your music')}
+              onClick={() => onClick(RoutePattern.SumbmitYourMusic)}
             >
               submit your music
             </Link>

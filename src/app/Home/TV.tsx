@@ -1,6 +1,7 @@
 import React from 'react';
 import { Headings } from '../../components/Heading';
 import { Version } from '../../components/Heading/Headings';
+import { RoutePattern } from '../../routes/RoutePattern';
 
 interface TVProps {
   selected: string;
@@ -8,28 +9,28 @@ interface TVProps {
 
 export default function TV({ selected }: TVProps) {
   switch (selected) {
-    case 'rules': {
+    case RoutePattern.Rules: {
       return (
         <div style={{ width: '220px' }} className="overflow-hidden">
           <Headings v={Version.v1} text="rules" after="rules" />;
         </div>
       );
     }
-    case 'future tools': {
+    case RoutePattern.FutureTools: {
       return (
         <div style={{ marginTop: '-15px', width: '220px' }} className="overflow-hidden">
           <Headings v={Version.v1} text="future" text2="tools" after="future" after2="tools" />;
         </div>
       );
     }
-    case 'testimonials': {
+    case RoutePattern.Testimonials: {
       return (
         <div style={{ marginTop: '-15px' }} className="overflow-hidden">
           <Headings v={Version.v1} text="testi" text2="monials" after="testi" after2="monials" />;
         </div>
       );
     }
-    case 'how it works': {
+    case RoutePattern.HowItWorks: {
       return (
         <div style={{ marginTop: '-15px', width: '220px' }} className="overflow-hidden">
           <Headings
@@ -42,7 +43,7 @@ export default function TV({ selected }: TVProps) {
         </div>
       );
     }
-    case 'submit your music': {
+    case RoutePattern.Home: {
       return (
         <div style={{ marginTop: '-15px', width: '220px' }} className="overflow-hidden">
           <Headings

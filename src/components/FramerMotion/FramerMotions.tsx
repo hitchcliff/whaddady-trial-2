@@ -78,7 +78,7 @@ export const ScaleInThenScaleOut: MotionProps = {
   },
   exit: {
     opacity: 1,
-    translateY: 600,
+    translateY: 500,
     scale: 2.5,
     transition: {
       duration: 5,

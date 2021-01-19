@@ -46,7 +46,13 @@ export default function Home() {
       </motion.div>
 
       <div className="w-full h-full absolute top-0 left-0">
-        <img className="w-full h-full object-cover" src={BGImage} alt="studio" />
+        <motion.img
+          className="w-full h-full object-cover"
+          src={BGImage}
+          alt="studio"
+          initial={{ opacity: 0.2 }}
+          animate={{ opacity: 1 }}
+        />
       </div>
     </motion.div>
   );
