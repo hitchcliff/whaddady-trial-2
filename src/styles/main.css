@@ -693,6 +693,12 @@ video {
   }
 }
 
+@media (max-width: 1360px) and (max-height: 660px) {
+  .logo {
+    top: 15%;
+  }
+}
+
 @media (max-width: 1024px) and (max-height: 600px) {
   .logo {
     top: 18%;
@@ -815,6 +821,13 @@ video {
   }
 }
 
+@media (max-width: 1360px) and (max-height: 660px) {
+  .navigation {
+    width: 73.8%;
+    left: 12.7%;
+  }
+}
+
 @media (max-width: 1280px) and (max-height: 950px) {
   .navigation {
     width: 100%;
@@ -826,6 +839,13 @@ video {
   .navigation {
     width: 83%;
     left: 8%;
+  }
+}
+
+@media (max-width: 1280px) and (max-height: 720px) {
+  .navigation {
+    width: 78.333%;
+    left: 10.5%;
   }
 }
 
@@ -1008,6 +1028,14 @@ video {
   }
 }
 
+@media (max-width: 1360px) and (max-height: 660px) {
+  .socials,
+  .slick-cloned {
+    top: 10%;
+    left: 5%;
+  }
+}
+
 @media (max-width: 1280px) and (max-height: 950px) {
   .socials,
   .slick-cloned {
@@ -1115,6 +1143,13 @@ video {
   }
 }
 
+@media (max-width: 1360px) and (max-height: 660px) {
+  .cta {
+    top: 9.6%;
+    right: 5.8%;
+  }
+}
+
 @media (max-width: 1280px) and (max-height: 950px) {
   .cta {
     display: none;
@@ -1127,6 +1162,12 @@ video {
     right: 0%;
     width: 138px;
     display: block;
+  }
+}
+
+@media (max-width: 1280px) and (max-height: 720px) {
+  .cta {
+    display: none;
   }
 }
 
@@ -1198,6 +1239,12 @@ video {
   .spinning-logo {
     width: 25px;
     bottom: 32.2%;
+  }
+}
+
+@media (max-width: 1360px) and (max-height: 660px) {
+  .spinning-logo {
+    bottom: 30.3%;
   }
 }
 

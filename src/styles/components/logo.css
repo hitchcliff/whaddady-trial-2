@@ -33,6 +33,12 @@
   }
 }
 
+@media (max-width: 1360px) and (max-height: 660px) {
+  .logo {
+    top: 15%;
+  }
+}
+
 @media (max-width: 1024px) and (max-height: 600px) {
   .logo {
     top: 18%;

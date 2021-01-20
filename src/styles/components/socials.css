@@ -100,6 +100,14 @@
   }
 }
 
+@media (max-width: 1360px) and (max-height: 660px) {
+  .socials,
+  .slick-cloned {
+    top: 10%;
+    left: 5%;
+  }
+}
+
 @media (max-width: 1280px) and (max-height: 950px) {
   .socials,
   .slick-cloned {
