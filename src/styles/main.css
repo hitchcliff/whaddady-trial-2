@@ -847,8 +847,12 @@ video {
 
 @media (max-width: 720px) and (max-height: 1280px) {
   .link {
-    font-size: 4rem;
-    line-height: 4rem;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
+
+  .link:last-child {
+    padding-right: 30px;
   }
 }
 
@@ -859,8 +863,24 @@ video {
   }
 
   .link {
-    font-size: 2.5rem;
-    line-height: 2.5rem;
+    font-size: 1.9rem;
+    line-height: 1.9rem;
+  }
+
+  .link:last-child {
+    padding-right: 30px;
+  }
+}
+
+@media (max-width: 480px) and (max-height: 854px) {
+  .link {
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 424px) and (max-height: 753px) {
+  .link {
+    font-size: 1.5rem;
   }
 }
 
@@ -872,14 +892,14 @@ video {
   }
 
   .link {
-    font-size: 1.8rem;
+    font-size: 1.2rem;
   }
 }
 
 @media (max-width: 213px) and (max-height: 320px) {
   .link {
-    font-size: 1.4rem;
-    line-height: 1.4rem;
+    font-size: 0.8rem;
+    line-height: 0.8rem;
   }
 }
 
