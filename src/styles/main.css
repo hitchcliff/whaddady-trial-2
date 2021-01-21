@@ -870,15 +870,22 @@ video {
 
 @media (min-width: 1280px) {
   .cta {
+    width: 10%;
+    top: 13.5%;
+    left: 84.5%;
+  }
+}
+
+@media (min-width: 1536px) {
+  .cta {
     top: 14.5%;
-    left: 86%;
   }
 }
 
 .spinning-logo {
   width: 1rem;
-  bottom: 33%;
-  right: 48.6%;
+  bottom: 32.5%;
+  right: 49.3%;
 }
 
 @media (min-width: 768px) {
