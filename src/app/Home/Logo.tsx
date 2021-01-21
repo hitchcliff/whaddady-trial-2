@@ -8,9 +8,9 @@ export default function Logo({ spinning }: LogoProps) {
   return (
     <div>
       {spinning ? (
-        <img className="w-6 object-cover" src={LogoImage2} alt="spinning 3parta" />
+        <img className="w-3 lg:w-4 xl:w-6 object-cover" src={LogoImage2} alt="spinning 3parta" />
       ) : (
-        <img className="w-40 object-cover" src={LogoImage} alt="3parta logo" />
+        <img className="w-full object-cover" src={LogoImage} alt="3parta logo" />
       )}
     </div>
   );

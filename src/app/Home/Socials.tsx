@@ -7,9 +7,8 @@ export default function Socials() {
         <li className="mr-5">
           <a href="!#">
             <svg
-              className="text-primary hover:text-white"
+              className="fb-icon text-primary hover:text-white"
               aria-hidden="true"
-              width="13px"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 320 512"
             >
@@ -23,9 +22,8 @@ export default function Socials() {
         <li className="mr-5">
           <a href="!#">
             <svg
-              className="text-primary hover:text-white"
+              className="twitter-icon text-primary hover:text-white"
               aria-hidden="true"
-              width="23px"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 512 512"
             >
@@ -39,9 +37,8 @@ export default function Socials() {
         <li className="mr-5">
           <a href="!#">
             <svg
-              className="text-primary hover:text-white"
+              className="insta-icon text-primary hover:text-white"
               aria-hidden="true"
-              width="20px"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 448 512"
             >
@@ -54,9 +51,8 @@ export default function Socials() {
         </li>
         <li className="mr-5">
           <svg
-            className="text-primary hover:text-white"
+            className="youtube-icon text-primary hover:text-white"
             aria-hidden="true"
-            width="27px"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 576 512"
           >
@@ -69,9 +65,8 @@ export default function Socials() {
         <li className="mr-5">
           <a href="!#">
             <svg
-              className="text-primary hover:text-white"
+              className="apple-icon text-primary hover:text-white"
               aria-hidden="true"
-              width="17px"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 384 512"
             >

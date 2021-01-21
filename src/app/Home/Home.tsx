@@ -10,29 +10,31 @@ import {
 } from '../../components/FramerMotion/FramerMotions';
 import { useState } from 'react';
 import TV from './TV';
-import { SocialSlider } from '../../components';
 
 export default function Home() {
   const [selected, setSelected] = useState<string>('');
 
   return (
     <motion.div
-      className="flex flex-col justify-between items-center overflow-x-hidden min-h-screen"
+      className="w-full relative flex flex-col justify-center items-center bg-black"
       {...ScaleInThenScaleOut}
     >
-      <motion.div className="socials" {...FadeInThenFadeOut}>
+      <motion.div
+        className="absolute transform skew-y-3 hidden lg:block"
+        style={{ top: '13.3%', left: '5%', width: '9.6%' }}
+        {...FadeInThenFadeOut}
+      >
         <Socials />
       </motion.div>
 
-      <div className="z-10 ">
-        <SocialSlider />
-      </div>
-
-      <motion.div className="cta" {...FadeInThenFadeOut}>
+      <motion.div
+        className="cta absolute transform -skew-y-3 hidden lg:block"
+        {...FadeInThenFadeOut}
+      >
         <Cta onClick={setSelected} />
       </motion.div>
 
-      <div className="z-10 absolute logo">
+      <div className="absolute logo">
         <motion.div className={!selected ? 'logo' : 'hidden'} {...FadeInThenFadeOut}>
           <Logo />
         </motion.div>
@@ -42,23 +44,31 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="navigation absolute z-10">
+      <div className="absolute" style={{ top: '40%', left: '13%', width: '73.333%' }}>
         <Navigation onClick={setSelected} />
       </div>
 
-      <motion.div className="spinning-logo" {...FadeInThenFadeOut}>
+      <motion.div className="spinning-logo absolute -ml-5 -mt-5" {...FadeInThenFadeOut}>
         <Logo spinning />
       </motion.div>
 
-      <div className="w-full h-full absolute top-0 left-0">
-        <motion.img
-          className="w-full h-full object-cover"
-          src={BGImage}
-          alt="studio"
-          initial={{ opacity: 0.2 }}
-          animate={{ opacity: 1 }}
-        />
-      </div>
+      <motion.img
+        className="w-full hidden lg:block"
+        src={BGImage}
+        alt="studio"
+        initial={{ opacity: 0.2 }}
+        animate={{ opacity: 1 }}
+        {...FadeInThenFadeOut}
+      />
+
+      <motion.img
+        className="w-full h-full object-cover object-center block lg:hidden"
+        src={BGImage}
+        alt="studio"
+        initial={{ opacity: 0.2 }}
+        animate={{ opacity: 1 }}
+        {...FadeInThenFadeOut}
+      />
     </motion.div>
   );
 }

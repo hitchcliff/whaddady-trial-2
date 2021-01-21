@@ -1,146 +1,53 @@
-.socials {
-  @apply absolute z-10 w-full;
-}
-
-.socials ul {
-  transform: skew(0deg, 3.5deg);
-}
-
-/* desktop */
-@media (max-width: 1920px) and (max-height: 1200px) {
-  .socials {
-    top: 14%;
-    left: 0%;
-    width: 160px;
+@media (min-width: 1024px) {
+  .fb-icon {
+    width: 11px;
   }
-
-  .slick-list {
-    width: 160px !important;
+  .twitter-icon {
+    width: 20px;
+  }
+  .insta-icon {
+    width: 18px;
+  }
+  .youtube-icon {
+    width: 24px;
+  }
+  .apple-icon {
+    width: 15px;
   }
 }
 
-@media (max-width: 1920px) and (max-height: 1080px) {
-  .socials {
-    top: 14%;
-    left: 3%;
-    width: 181px;
+@media (min-width: 1280px) {
+  .fb-icon {
+    width: 13px;
   }
-
-  .slick-list {
-    width: 181px !important;
+  .twitter-icon {
+    width: 23px;
   }
-}
-
-@media (max-width: 1920px) and (max-height: 980px) {
-  .socials,
-  .slick-cloned {
-    top: 13%;
-    left: 5.5%;
+  .insta-icon {
+    width: 20px;
+  }
+  .youtube-icon {
+    width: 27px;
+  }
+  .apple-icon {
+    width: 17px;
   }
 }
 
-@media (max-width: 1680px) and (max-height: 1050px) {
-  .socials,
-  .slick-cloned {
-    top: 14%;
-    left: 0%;
-    width: 139px;
+@media (min-width: 1536px) {
+  .fb-icon {
+    width: 15px;
   }
-
-  .slick-list {
-    width: 139px !important;
+  .twitter-icon {
+    width: 25px;
   }
-}
-
-@media (max-width: 1600px) and (max-height: 900px) {
-  .socials,
-  .slick-cloned {
-    top: 14%;
-    left: 3%;
-    width: 146px;
+  .insta-icon {
+    width: 22px;
   }
-
-  .slick-list {
-    width: 146px !important;
+  .youtube-icon {
+    width: 29px;
   }
-}
-
-@media (max-width: 1600px) and (max-height: 780px) {
-  .socials,
-  .slick-cloned {
-    top: 11%;
-    left: 5.5%;
-  }
-}
-
-@media (max-width: 1440px) and (max-height: 900px) {
-  .socials,
-  .slick-cloned,
-  .slick-cloned {
-    top: 14%;
-    left: 1%;
-    width: 103px;
-  }
-
-  .slick-list {
-    width: 103px !important;
-  }
-}
-
-@media (max-width: 1366px) and (max-height: 768px) {
-  .socials,
-  .slick-cloned {
-    top: 13%;
-    left: 3%;
-    width: 129px;
-  }
-
-  .slick-list {
-    width: 129px !important;
-  }
-}
-
-@media (max-width: 1360px) and (max-height: 660px) {
-  .socials,
-  .slick-cloned {
-    top: 10%;
-    left: 5%;
-  }
-}
-
-@media (max-width: 1280px) and (max-height: 950px) {
-  .socials,
-  .slick-cloned {
-    display: none;
-  }
-
-  .slick-list {
-    display: none;
-  }
-}
-
-@media (max-width: 1280px) and (max-height: 768px) {
-  .socials,
-  .slick-cloned {
-    top: 14%;
-    left: 1%;
-    width: 112px;
-    display: block;
-  }
-
-  .slick-list {
-    width: 112px;
-    display: block;
-  }
-}
-
-@media (max-width: 1024px) {
-  .socials,
-  .slick-cloned {
-    display: none;
-  }
-
-  .slick-list {
-    display: none;
+  .apple-icon {
+    width: 19px;
   }
 }

@@ -13,7 +13,9 @@ module.exports = {
       stroke: {
         white: '#ffffff',
       },
-      width: (theme) => ({}),
+      fontSize: {
+        xxs: ['.5rem', { lineHeight: '.75rem' }],
+      },
     },
   },
   variants: {
