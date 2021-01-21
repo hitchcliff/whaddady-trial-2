@@ -659,7 +659,13 @@ video {
 
 .logo {
   top: 18.5%;
-  width: 5rem;
+  width: 9rem;
+}
+
+@media (min-width: 768px) {
+  .logo {
+    width: 6rem;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -683,6 +689,21 @@ video {
 @media (min-width: 1680px) {
   .logo {
     width: 14rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .navigation {
+    width: 100%;
+    top: 42%;
+  }
+}
+
+@media (min-width: 768px) {
+  .navigation {
+    top: 40%;
+    left: 13%;
+    width: 73.333%;
   }
 }
 
@@ -733,6 +754,36 @@ video {
   }
 }
 
+@media (min-width: 768px) {
+  .fb-icon {
+    width: 8px;
+  }
+
+  .twitter-icon {
+    width: 13px;
+  }
+
+  .insta-icon {
+    width: 12px;
+  }
+
+  .youtube-icon {
+    width: 15px;
+  }
+
+  .apple-icon {
+    width: 12px;
+  }
+
+  .socials {
+    top: 12.5%;
+    left: 5%;
+    position: absolute;
+    display: block;
+    width: 9%;
+  }
+}
+
 @media (min-width: 1024px) {
   .fb-icon {
     width: 11px;
@@ -752,6 +803,12 @@ video {
 
   .apple-icon {
     width: 15px;
+  }
+
+  .socials {
+    top: 13.3%;
+    left: 5%;
+    width: 9.6%;
   }
 }
 
@@ -804,6 +861,13 @@ video {
   right: 7%;
 }
 
+@media (min-width: 768px) {
+  .cta {
+    top: 14%;
+    right: 7%;
+  }
+}
+
 @media (min-width: 1280px) {
   .cta {
     top: 14.5%;
@@ -813,6 +877,15 @@ video {
 
 .spinning-logo {
   width: 1rem;
+  bottom: 33%;
+  right: 48.6%;
+}
+
+@media (min-width: 768px) {
+  .spinning-logo {
+    right: 49.2%;
+    bottom: 32.5%;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -11881,6 +11954,11 @@ video {
 .text-9xl {
   font-size: 8rem;
   line-height: 1;
+}
+
+.text-xxxs {
+  font-size: .3rem;
+  line-height: .5rem;
 }
 
 .text-xxs {
@@ -40671,6 +40749,11 @@ video {
     line-height: 1;
   }
 
+  .sm\:text-xxxs {
+    font-size: .3rem;
+    line-height: .5rem;
+  }
+
   .sm\:text-xxs {
     font-size: .5rem;
     line-height: .75rem;
@@ -69392,6 +69475,11 @@ video {
   .md\:text-9xl {
     font-size: 8rem;
     line-height: 1;
+  }
+
+  .md\:text-xxxs {
+    font-size: .3rem;
+    line-height: .5rem;
   }
 
   .md\:text-xxs {
@@ -98117,6 +98205,11 @@ video {
     line-height: 1;
   }
 
+  .lg\:text-xxxs {
+    font-size: .3rem;
+    line-height: .5rem;
+  }
+
   .lg\:text-xxs {
     font-size: .5rem;
     line-height: .75rem;
@@ -126840,6 +126933,11 @@ video {
     line-height: 1;
   }
 
+  .xl\:text-xxxs {
+    font-size: .3rem;
+    line-height: .5rem;
+  }
+
   .xl\:text-xxs {
     font-size: .5rem;
     line-height: .75rem;
@@ -155561,6 +155659,11 @@ video {
   .\32xl\:text-9xl {
     font-size: 8rem;
     line-height: 1;
+  }
+
+  .\32xl\:text-xxxs {
+    font-size: .3rem;
+    line-height: .5rem;
   }
 
   .\32xl\:text-xxs {

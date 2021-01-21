@@ -20,21 +20,20 @@ export default function Home() {
       {...ScaleInThenScaleOut}
     >
       <motion.div
-        className="absolute transform skew-y-3 hidden lg:block"
-        style={{ top: '13.3%', left: '5%', width: '9.6%' }}
+        className="socials absolute transform skew-y-3 hidden md:block z-10"
         {...FadeInThenFadeOut}
       >
         <Socials />
       </motion.div>
 
       <motion.div
-        className="cta absolute transform -skew-y-3 hidden lg:block"
+        className="cta absolute transform -skew-y-3 hidden md:block z-10"
         {...FadeInThenFadeOut}
       >
         <Cta onClick={setSelected} />
       </motion.div>
 
-      <div className="absolute logo">
+      <div className="absolute logo z-10">
         <motion.div className={!selected ? 'logo' : 'hidden'} {...FadeInThenFadeOut}>
           <Logo />
         </motion.div>
@@ -44,16 +43,16 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="absolute" style={{ top: '40%', left: '13%', width: '73.333%' }}>
+      <div className="navigation absolute z-10">
         <Navigation onClick={setSelected} />
       </div>
 
-      <motion.div className="spinning-logo absolute -ml-5 -mt-5" {...FadeInThenFadeOut}>
+      <motion.div className="spinning-logo absolute -ml-5 -mt-5 z-10" {...FadeInThenFadeOut}>
         <Logo spinning />
       </motion.div>
 
       <motion.img
-        className="w-full hidden lg:block"
+        className="w-full hidden md:block"
         src={BGImage}
         alt="studio"
         initial={{ opacity: 0.2 }}
@@ -61,14 +60,9 @@ export default function Home() {
         {...FadeInThenFadeOut}
       />
 
-      <motion.img
-        className="w-full h-full object-cover object-center block lg:hidden"
-        src={BGImage}
-        alt="studio"
-        initial={{ opacity: 0.2 }}
-        animate={{ opacity: 1 }}
-        {...FadeInThenFadeOut}
-      />
+      <div className="top-0 left-0 w-full h-screen z-0 block md:hidden">
+        <img className="w-full h-full object-cover object-center" src={BGImage} alt="studio" />
+      </div>
     </motion.div>
   );
 }

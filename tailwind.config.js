@@ -14,6 +14,7 @@ module.exports = {
         white: '#ffffff',
       },
       fontSize: {
+        xxxs: ['.3rem', { lineHeight: '.5rem' }],
         xxs: ['.5rem', { lineHeight: '.75rem' }],
       },
     },

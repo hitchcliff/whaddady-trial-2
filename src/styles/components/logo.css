@@ -1,6 +1,12 @@
 .logo {
   top: 18.5%;
-  width: 5rem;
+  width: 9rem;
+}
+
+@media (min-width: 768px) {
+  .logo {
+    width: 6rem;
+  }
 }
 
 @media (min-width: 1024px) {

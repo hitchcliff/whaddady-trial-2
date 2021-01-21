@@ -3,6 +3,13 @@
   right: 7%;
 }
 
+@media (min-width: 768px) {
+  .cta {
+    top: 14%;
+    right: 7%;
+  }
+}
+
 @media (min-width: 1280px) {
   .cta {
     top: 14.5%;

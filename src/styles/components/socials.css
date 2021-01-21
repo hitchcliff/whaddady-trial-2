@@ -1,3 +1,28 @@
+@media (min-width: 768px) {
+  .fb-icon {
+    width: 8px;
+  }
+  .twitter-icon {
+    width: 13px;
+  }
+  .insta-icon {
+    width: 12px;
+  }
+  .youtube-icon {
+    width: 15px;
+  }
+  .apple-icon {
+    width: 12px;
+  }
+
+  .socials {
+    top: 12.5%;
+    left: 5%;
+    position: absolute;
+    display: block;
+    width: 9%;
+  }
+}
 @media (min-width: 1024px) {
   .fb-icon {
     width: 11px;
@@ -13,6 +38,12 @@
   }
   .apple-icon {
     width: 15px;
+  }
+
+  .socials {
+    top: 13.3%;
+    left: 5%;
+    width: 9.6%;
   }
 }
 
